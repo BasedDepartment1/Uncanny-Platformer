@@ -2,6 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
+/Uncanny Platformer/[Ll]ibrary/
+/Uncanny Platformer/[Tt]emp/
+/Uncanny Platformer/[Oo]bj/
+/Uncanny Platformer/[Bb]uild/
+/Uncanny Platformer/[Bb]uilds/
+/Uncanny Platformer/[Ll]ogs/
+/Uncanny Platformer/[Mm]emoryCaptures/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -42,6 +49,7 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.log
 
 # Unity3D generated meta files
 *.pidb.meta
