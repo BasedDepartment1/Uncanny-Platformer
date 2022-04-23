@@ -1414,11 +1414,39 @@
       <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_SheetnoEffect.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_SheetnoEffect.png.meta" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Combat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/EnemyPatrol.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/EnemyPatrol.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Health.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/HealthBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/HealthBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/ThrowingWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/ThrowingWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Trap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Trap.cs" afterDir="false" />
+>>>>>>> origin/Fighting
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Source/EnemyPatrol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/ThrowingWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/Trap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/Combat.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -1469,16 +1497,4 @@
       <workItem from="1650132588621" duration="84000" />
       <workItem from="1650704762614" duration="1641000" />
       <workItem from="1650706436058" duration="4109000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-</project>
+      <workItem from="1650706493236" duration="23118000" />
