@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b829707e-e1c1-45fe-b819-7e6a3413805c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Uncanny Platformer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Uncanny Platformer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/CombatTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/CombatTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/Combat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Source/EnemyPatrol.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Source/ThrowingWeapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Trap.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Source/Combat.cs" root0="FORCE_HIGHLIGHTING" />
@@ -76,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650132577513</updated>
       <workItem from="1650132588621" duration="84000" />
-      <workItem from="1650706493236" duration="16449000" />
+      <workItem from="1650706493236" duration="21350000" />
     </task>
     <servers />
   </component>
