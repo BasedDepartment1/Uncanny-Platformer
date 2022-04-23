@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b829707e-e1c1-45fe-b819-7e6a3413805c" name="Changes" comment="" />
+    <list default="true" id="b829707e-e1c1-45fe-b819-7e6a3413805c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Uncanny Platformer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Uncanny Platformer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ParallaxDuskMountainBackgroundArtwork/Layers/parallax-mountain-bg.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ParallaxDuskMountainBackgroundArtwork/Layers/parallax-mountain-bg.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MovementTestRoom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MovementTestRoom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Source/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Source/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Aniamtion/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Aniamtion/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Aniamtion/Warrior.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Aniamtion/Warrior.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_Sheet-Effect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_Sheet-Effect.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,6 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1650132577513</updated>
       <workItem from="1650132588621" duration="84000" />
+      <workItem from="1650704762614" duration="1641000" />
+      <workItem from="1650706436058" duration="2901000" />
     </task>
     <servers />
   </component>
