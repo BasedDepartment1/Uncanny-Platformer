@@ -1,7 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
 public class ThrowingWeapon : MonoBehaviour
@@ -15,16 +12,16 @@ public class ThrowingWeapon : MonoBehaviour
     private float lifeTime;
 
     private BoxCollider2D boxCollider;
-
     private Animator animator;
-    // Start is called before the first frame update
+    
+    private static readonly int HitEntity = Animator.StringToHash("hitEntity");
+
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }
-
-    // Update is called once per frame
+    
     private void Update()
     {
         if (hitEntity)
@@ -35,6 +32,7 @@ public class ThrowingWeapon : MonoBehaviour
         lifeTime += Time.deltaTime;
         var movementSpeed = maxFlightSpeed * Time.deltaTime * direction;
         transform.Translate(movementSpeed, 0, 0);
+        
         if (lifeTime > maxLifeTime)
         {
             gameObject.SetActive(false);
@@ -43,15 +41,14 @@ public class ThrowingWeapon : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // var entityHealth = other.GetComponent<Health>();
-        // entityHealth?.TakeDamage(knifeDamage);
         if (other.gameObject.CompareTag("Enemy")
-        || other.gameObject.CompareTag("Player"))
+            || other.gameObject.CompareTag("Player"))
         {
-            other.GetComponent<Health>().TakeDamage(knifeDamage);
+            other.GetComponent<Health>().ReduceHealthPoints(knifeDamage);
         }
+        
         hitEntity = true;
-        animator.SetBool("hitEntity", true);
+        animator.SetBool(HitEntity, true);
         boxCollider.enabled = false;
     }
 
@@ -61,7 +58,7 @@ public class ThrowingWeapon : MonoBehaviour
         gameObject.SetActive(true);
         hitEntity = false;
         boxCollider.enabled = true;
-        if (Mathf.Sign(transform.localScale.x) != direction)
+        if (Math.Abs(Mathf.Sign(transform.localScale.x) - direction) > 1e-7f)
         {
             FlipScale();
         }
@@ -71,9 +68,10 @@ public class ThrowingWeapon : MonoBehaviour
 
     private void FlipScale()
     {
-        var scale = transform.localScale;
+        var transform1 = transform;
+        var scale = transform1.localScale;
         scale.x *= -1;
-        transform.localScale = scale;
+        transform1.localScale = scale;
     }
 
     private void Deactivate()

@@ -1,88 +1,77 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+
+public enum Directions
+{
+    Left = -1,
+    Right = 1
+}
 
 public class EnemyPatrol : MonoBehaviour
 {
+    [Header("Patrol Objects")]
     [SerializeField] private Transform leftEdge;
     [SerializeField] private Transform rightEdge;
-
     [SerializeField] private Transform enemy;
-    private bool movingRight;
-
+    
+    [Header("Patrol Timings")]
+    [SerializeField] private float standDuration;
     [SerializeField] private float maxSpeed;
+    
+    
+    private bool movingRight;
+    private float standTimer;
+    
 
     private Vector3 initialScale;
-
     private Rigidbody2D enemyBody;
 
-    [SerializeField] private float standDuration;
-
-    private float standTimer;
-    // Start is called before the first frame update
     void Awake()
     {
         initialScale = enemy.localScale;
         enemyBody = enemy.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // if (movingRight)
-        // {
-        //     
-        // }
         if (movingRight)
         {
             if (enemy.position.x < rightEdge.position.x)
             {
-                
-                // enemyBody.velocity = new Vector2(maxSpeed, enemyBody.velocity.y);
-                // enemy.position = new Vector3()
-                MoveDirection(1);
+                MoveToDirection(Directions.Right);
             }
             else
             {
-                Flip();
-                // gameObject.SetActive(false);
+                TurnAround();
             }
         }
         else
         {
             if (enemy.position.x >= leftEdge.position.x)
             {
-                MoveDirection(-1);
-                // enemyBody.velocity = new Vector2(-maxSpeed, enemyBody.velocity.y);
+                MoveToDirection(Directions.Left);
             }
             else
             {
-                Flip();
-                // gameObject.SetActive(false);
+                TurnAround();
             }
         }
     }
 
-    private void MoveDirection(float direction)
+    private void MoveToDirection(Directions direction)
     {
         standTimer = 0;
-        enemy.localScale = new Vector3(-Mathf.Abs(initialScale.x) * direction, 
+        enemy.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
             initialScale.y, initialScale.z);
-        // enemy.position = new Vector3(position.x + Time.deltaTime * direction * maxSpeed,
-        //     position.y);
-        enemyBody.velocity = new Vector2(direction * maxSpeed, enemyBody.velocity.y);
+        enemyBody.velocity = new Vector2((int)direction * maxSpeed, enemyBody.velocity.y);
     }
 
-    private void Flip()
+    private void TurnAround()
     {
         standTimer += Time.deltaTime;
         if (standTimer > standDuration)
         {
             movingRight = !movingRight;
         }
-        // var currentScale = enemy.localScale;
-        // enemy.localScale = new Vector3(-currentScale.x,
-        //     currentScale.y, currentScale.z);
     }
 }
