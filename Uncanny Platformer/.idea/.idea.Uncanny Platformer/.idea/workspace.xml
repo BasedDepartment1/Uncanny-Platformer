@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b829707e-e1c1-45fe-b819-7e6a3413805c" name="Changes" comment="" />
+    <list default="true" id="b829707e-e1c1-45fe-b819-7e6a3413805c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Background Grid.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Chest Animation.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Chest Animation.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Tileset Ground.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Cainos/Pixel Art Platformer - Village Props/Texture/TX Village Props.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_Sheet-Effect.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_Sheet-Effect.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_SheetnoEffect.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Warrior free set/Sprite Sheet/Warrior_SheetnoEffect.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
