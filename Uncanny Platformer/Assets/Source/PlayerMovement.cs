@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -18,26 +17,22 @@ public class PlayerMovement : MonoBehaviour
     
     private void Update()
     {
-        var moveDistance = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(moveDistance * MaxSpeed,
-            body.velocity.y);
-        animator.SetBool("isRunning", moveDistance !=0);
-        if (moveDistance > 0 && !isOrientationRight
-            || moveDistance < 0 && isOrientationRight)
+        if (body.velocity.y >= 0)
+        {
+            return;
+        }
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isFalling", true);
+    }
+
+    public void MoveToDirection(Directions direction)
+    {
+        body.velocity = new Vector2((int)direction * MaxSpeed, body.velocity.y);
+        animator.SetBool("isRunning", direction != Directions.None);
+        if ((int)direction > 0 && !isOrientationRight
+            || (int)(direction) < 0 && isOrientationRight)
         {
             Flip();
-        }
-
-        if (Input.GetKeyDown(KeyCode.W) && MaxJumpCount > jumpCount)
-        {
-            Jump();
-            jumpCount++;
-        }
-        
-        if (body.velocity.y < 0)
-        {
-            animator.SetBool("isJumping", false);
-            animator.SetBool("isFalling", true);
         }
     }
 
@@ -49,17 +44,21 @@ public class PlayerMovement : MonoBehaviour
         isOrientationRight = !isOrientationRight;
     }
     
-    private void Jump()
+    public void Jump()
     {
         animator.SetBool("isJumping", true);
-        body.velocity = new Vector2(body.velocity.x, MaxSpeed);
+        
+        if (MaxJumpCount > jumpCount)
+        {
+            body.velocity = new Vector2(body.velocity.x, MaxSpeed);
+            jumpCount++;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            //animator.SetBool("isJumping", false);
             animator.SetBool("isFalling", false);
             jumpCount = 0;
         }

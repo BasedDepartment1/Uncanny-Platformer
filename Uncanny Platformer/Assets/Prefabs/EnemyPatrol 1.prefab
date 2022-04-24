@@ -226,6 +226,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 3225832317793331946, guid: 8f1d64798efad453fab4d59c83a2be2d, type: 3}
+    - target: {fileID: 2155171437412901499, guid: b9a5d86d977df489f8ca9c306b044f2b, type: 3}
+      propertyPath: blinkCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2155171437412901499, guid: b9a5d86d977df489f8ca9c306b044f2b, type: 3}
+      propertyPath: invisibilityDuration
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9a5d86d977df489f8ca9c306b044f2b, type: 3}
 --- !u!1 &3648425505801167352 stripped
