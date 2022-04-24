@@ -26,16 +26,15 @@ public class Combat : MonoBehaviour
     private void Fire()
     {
         fireTimer = 0;
+        animator.SetTrigger("throw");
+    }
+
+    private void StartThrow()
+    {
         var knifeIndex = FindKnifeIndex();
         throwingKnives[knifeIndex].transform.position = firePosition.position;
         throwingKnives[knifeIndex].GetComponent<ThrowingWeapon>()
             .SetDirection(Mathf.Sign(transform.localScale.x));
-        animator.SetTrigger("throw");
-    }
-
-    private void EndThrow()
-    {
-        
     }
     
     private int FindKnifeIndex()
