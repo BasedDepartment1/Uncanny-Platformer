@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
     
     private Animator animator;
     private SpriteRenderer sprite;
+    private PlayerMovement controls;
     
     void Awake()
     {
@@ -24,6 +25,7 @@ public class Health : MonoBehaviour
         if (gameObject.CompareTag("Player"))
         {
             isPlayer = true;
+            controls = GetComponent<PlayerMovement>();
         }
         CurrentHealth = startingHealth;
         sprite = GetComponent<SpriteRenderer>();
@@ -36,15 +38,19 @@ public class Health : MonoBehaviour
         {
             if (isPlayer)
             {
-                animator.SetBool("isHurting", true);
+                animator.SetTrigger("hurt");
                 StartCoroutine(ActivateInvisibility());
             }
         }
         else
         {
-            if (isDead) return;
+            if (isDead)
+            {
+                return;
+            }
             isDead = true;
-            animator.SetBool("isDying", isDead);
+            animator.SetTrigger("death");
+            controls.gameObject.SetActive(false);
         }
     }
 

@@ -6,8 +6,13 @@ public class Combat : MonoBehaviour
     [SerializeField] private Transform firePosition;
     [SerializeField] private GameObject[] throwingKnives;
     
+    private Animator animator;
     private float fireTimer = float.MaxValue;
     
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.R) && fireTimer > fireCooldown)
@@ -25,6 +30,12 @@ public class Combat : MonoBehaviour
         throwingKnives[knifeIndex].transform.position = firePosition.position;
         throwingKnives[knifeIndex].GetComponent<ThrowingWeapon>()
             .SetDirection(Mathf.Sign(transform.localScale.x));
+        animator.SetTrigger("throw");
+    }
+
+    private void EndThrow()
+    {
+        
     }
     
     private int FindKnifeIndex()
