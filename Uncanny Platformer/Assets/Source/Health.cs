@@ -48,10 +48,16 @@ public class Health : MonoBehaviour
             {
                 return;
             }
-            isDead = true;
+            
             animator.SetTrigger("death");
-            controls.gameObject.SetActive(false);
+            
         }
+    }
+
+    private void Die()
+    {
+        isDead = true;
+        controls.gameObject.SetActive(false);
     }
 
     private IEnumerator ActivateInvisibility()
