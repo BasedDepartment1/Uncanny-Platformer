@@ -19,15 +19,18 @@ public class EnemyPatrol : MonoBehaviour
     [SerializeField] private float maxSpeed;
     
     
+    
     private bool movingRight;
     private float standTimer;
     
 
     private Vector3 initialScale;
     private Rigidbody2D enemyBody;
-
+    private Animator animator;
+    
     void Awake()
     {
+        animator = enemy.GetComponent<Animator>();
         initialScale = enemy.localScale;
         enemyBody = enemy.GetComponent<Rigidbody2D>();
     }
@@ -60,6 +63,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void MoveToDirection(Directions direction)
     {
+        animator.SetBool("isMoving", true);
         standTimer = 0;
         enemy.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
             initialScale.y, initialScale.z);
@@ -68,6 +72,7 @@ public class EnemyPatrol : MonoBehaviour
 
     private void TurnAround()
     {
+        animator.SetBool("isMoving", false);
         standTimer += Time.deltaTime;
         if (standTimer > standDuration)
         {

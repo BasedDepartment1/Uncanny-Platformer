@@ -36,11 +36,8 @@ public class Health : MonoBehaviour
         CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, startingHealth);
         if (CurrentHealth > 0)
         {
-            if (isPlayer)
-            {
-                animator.SetTrigger("hurt");
-                StartCoroutine(ActivateInvisibility());
-            }
+            StartCoroutine(ActivateInvisibility());
+            animator.SetTrigger("hurt");
         }
         else
         {
@@ -56,8 +53,9 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
+        Debug.Log("zxc");
         isDead = true;
-        controls.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     private IEnumerator ActivateInvisibility()
