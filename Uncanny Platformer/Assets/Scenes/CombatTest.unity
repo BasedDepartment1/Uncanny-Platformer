@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 70684261}
   - component: {fileID: 70684263}
   - component: {fileID: 70684262}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,6 +325,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa2ac6d7533dcb34c9200e92dad6d8dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   MaxSpeed: 10
   jumpCount: 0
   MaxJumpCount: 3
@@ -923,7 +926,7 @@ GameObject:
   - component: {fileID: 1423363096}
   - component: {fileID: 1423363098}
   - component: {fileID: 1423363097}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1365,6 +1368,14 @@ PrefabInstance:
     - target: {fileID: 5827103244498015369, guid: aa71f94d7c3c33c44a1f043eeb897b6a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827103244498015378, guid: aa71f94d7c3c33c44a1f043eeb897b6a, type: 3}
+      propertyPath: MaxJumpCount
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827103244498015378, guid: aa71f94d7c3c33c44a1f043eeb897b6a, type: 3}
+      propertyPath: groundLayer.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 5827103244498015381, guid: aa71f94d7c3c33c44a1f043eeb897b6a, type: 3}
       propertyPath: m_RootOrder
