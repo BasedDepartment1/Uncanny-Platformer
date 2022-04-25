@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MaxSpeed = 10f;
+    public float MaxSpeed = 100f;
     private bool isOrientationRight = true;
     private Rigidbody2D body;
     public int jumpCount;
-    public int MaxJumpCount = 3;
+    public int MaxJumpCount = 300;
     private Animator animator;
     
     private void Awake()
