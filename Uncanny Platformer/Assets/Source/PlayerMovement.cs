@@ -1,33 +1,24 @@
-using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private float MaxSpeed = 10f;
-    [SerializeField] private int jumpCount;
     [SerializeField] private int MaxJumpCount = 3;
     
     private bool isOrientationRight = true;
-    
     private Rigidbody2D body;
+    private int jumpCount;
     private Animator animator;
-    private BoxCollider2D boxCollider;
     
     private void Awake()
     {
-        boxCollider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
     
     private void Update()
     {
-        if (IsGrounded())
-        {
-            animator.SetBool("isFalling", false);
-        }
-        if (Mathf.Sign(body.velocity.y) > -1f)
+        if (body.velocity.y >= 0)
         {
             return;
         }
@@ -56,31 +47,21 @@ public class PlayerMovement : MonoBehaviour
     
     public void Jump()
     {
-        if (IsGrounded())
+        animator.SetBool("isJumping", true);
+        
+        if (MaxJumpCount > jumpCount)
         {
-            jumpCount = 0;
-        }
-
-        if (jumpCount < MaxJumpCount)
-        {
-            animator.SetBool("isJumping", true);
             body.velocity = new Vector2(body.velocity.x, MaxSpeed);
             jumpCount++;
         }
     }
 
-    private bool IsGrounded()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        var raycastHit = Physics2D.BoxCast(
-            boxCollider.bounds.center,
-            boxCollider.bounds.size,
-            0f,
-            Vector2.down,
-            0.1f,
-            groundLayer
-        );
-        
-        return raycastHit.collider != null;
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            animator.SetBool("isFalling", false);
+            jumpCount = 0;
+        }
     }
 }
-
