@@ -13,22 +13,21 @@ public class Combat : MonoBehaviour
     {
         animator = GetComponent<Animator>();
     }
+    
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) && fireTimer > fireCooldown)
-        {
-            Fire();
-        }
-
         fireTimer += Time.deltaTime;
     }
 
-    private void Fire()
+    public void Fire()
     {
-        fireTimer = 0;
-        animator.SetTrigger("throw");
+        if (fireTimer > fireCooldown)
+        {
+            fireTimer = 0;
+            animator.SetTrigger("throw");
+        }
     }
-
+    
     private void StartThrow()
     {
         var knifeIndex = FindKnifeIndex();

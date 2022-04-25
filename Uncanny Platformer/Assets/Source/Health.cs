@@ -45,7 +45,7 @@ public class Health : MonoBehaviour
             {
                 return;
             }
-            
+            animator.SetBool("isDying", true);
             animator.SetTrigger("death");
             
         }

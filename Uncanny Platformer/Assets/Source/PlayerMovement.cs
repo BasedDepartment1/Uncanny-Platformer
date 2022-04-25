@@ -3,41 +3,46 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float MaxSpeed = 10f;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private float MaxSpeed = 10f;
+    [SerializeField] private int jumpCount;
+    [SerializeField] private int MaxJumpCount = 3;
+    
     private bool isOrientationRight = true;
+    
     private Rigidbody2D body;
-    public int jumpCount;
-    public int MaxJumpCount = 3;
     private Animator animator;
+    private BoxCollider2D boxCollider;
     
     private void Awake()
     {
+        boxCollider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
     }
     
     private void Update()
     {
-        var moveDistance = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(moveDistance * MaxSpeed,
-            body.velocity.y);
-        animator.SetBool("isRunning", moveDistance !=0);
-        if (moveDistance > 0 && !isOrientationRight
-            || moveDistance < 0 && isOrientationRight)
+        if (IsGrounded())
+        {
+            animator.SetBool("isFalling", false);
+        }
+        if (Mathf.Sign(body.velocity.y) > -1f)
+        {
+            return;
+        }
+        animator.SetBool("isJumping", false);
+        animator.SetBool("isFalling", true);
+    }
+
+    public void MoveToDirection(Directions direction)
+    {
+        body.velocity = new Vector2((int)direction * MaxSpeed, body.velocity.y);
+        animator.SetBool("isRunning", direction != Directions.None);
+        if ((int)direction > 0 && !isOrientationRight
+            || (int)(direction) < 0 && isOrientationRight)
         {
             Flip();
-        }
-
-        if (Input.GetKeyDown(KeyCode.W) && MaxJumpCount > jumpCount)
-        {
-            Jump();
-            jumpCount++;
-        }
-        
-        if (body.velocity.y < 0)
-        {
-            animator.SetBool("isJumping", false);
-            animator.SetBool("isFalling", true);
         }
     }
 
@@ -49,20 +54,33 @@ public class PlayerMovement : MonoBehaviour
         isOrientationRight = !isOrientationRight;
     }
     
-    private void Jump()
+    public void Jump()
     {
-        animator.SetBool("isJumping", true);
-        body.velocity = new Vector2(body.velocity.x, MaxSpeed);
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (IsGrounded())
         {
-            //animator.SetBool("isJumping", false);
-            animator.SetBool("isFalling", false);
             jumpCount = 0;
         }
+
+        if (jumpCount < MaxJumpCount)
+        {
+            animator.SetBool("isJumping", true);
+            body.velocity = new Vector2(body.velocity.x, MaxSpeed);
+            jumpCount++;
+        }
+    }
+
+    private bool IsGrounded()
+    {
+        var raycastHit = Physics2D.BoxCast(
+            boxCollider.bounds.center,
+            boxCollider.bounds.size,
+            0f,
+            Vector2.down,
+            0.1f,
+            groundLayer
+        );
+        
+        return raycastHit.collider != null;
     }
 }
 
