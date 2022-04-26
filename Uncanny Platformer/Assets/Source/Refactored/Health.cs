@@ -11,22 +11,25 @@ public class Health : MonoBehaviour
     [Header("Invisibility")]
     [SerializeField] private float invisibilityDuration;
     [SerializeField] private int blinkCount;
+
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private LayerMask enemyLayer;
     
-    private bool isDead;
-    private bool isPlayer;
-    
-    private Animator animator;
+    internal bool isDead;
+    internal bool wasHurt;
+
+    // private Animator animator;
     private SpriteRenderer sprite;
-    private PlayerMovement controls;
+    // private PlayerMovement controls;
     
     void Awake()
     {
-        animator = GetComponent<Animator>();
-        if (gameObject.CompareTag("Player"))
-        {
-            isPlayer = true;
-            controls = GetComponent<PlayerMovement>();
-        }
+        // animator = GetComponent<Animator>();
+        // if (gameObject.CompareTag("Player"))
+        // {
+        //     isPlayer = true;
+        //     controls = GetComponent<PlayerMovement>();
+        // }
         CurrentHealth = startingHealth;
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -37,31 +40,33 @@ public class Health : MonoBehaviour
         if (CurrentHealth > 0)
         {
             StartCoroutine(ActivateInvisibility());
-            animator.SetTrigger("hurt");
+            wasHurt = true;
+            // animator.SetTrigger("hurt");
         }
         else
         {
-            if (isDead)
-            {
-                return;
-            }
-            animator.SetBool("isDying", true);
-            animator.SetTrigger("death");
-            
+            isDead = true;
+            // animator.SetBool("isDying", true);
+            // animator.SetTrigger("death");
         }
     }
 
     private void Die()
     {
-        Debug.Log("zxc");
+        // Debug.Log("zxc");
         isDead = true;
         gameObject.SetActive(false);
     }
 
+    internal void Revive()
+    {
+        CurrentHealth = startingHealth;
+        isDead = false;
+    }
+
     private IEnumerator ActivateInvisibility()
     {
-        Physics2D.IgnoreLayerCollision(6, 7, true);
-        Physics2D.IgnoreLayerCollision(6, 8, true);
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
         for (var i = 0; i < blinkCount; i++)
         {
             var blinkTime = invisibilityDuration / (blinkCount * 2);
@@ -70,7 +75,6 @@ public class Health : MonoBehaviour
             sprite.color = Color.white;
             yield return new WaitForSeconds(blinkTime);
         }
-        Physics2D.IgnoreLayerCollision(6, 7, false);
-        Physics2D.IgnoreLayerCollision(6, 8, false);
+        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
     }
 }
