@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Controls : MonoBehaviour
 {
-    [SerializeField] private KeyCode moveLeftKey;
-    [SerializeField] private KeyCode moveRightKey;
-    [SerializeField] private KeyCode jumpKey;
-    [SerializeField] private KeyCode throwKey;
-    [SerializeField] private KeyCode attackKey;
+    [SerializeField] private KeyCode moveLeftKey = KeyCode.A;
+    [SerializeField] private KeyCode moveRightKey = KeyCode.D;
+    [SerializeField] private KeyCode jumpKey = KeyCode.W;
+    [SerializeField] private KeyCode throwKey = KeyCode.R;
+    [SerializeField] private KeyCode attackKey = KeyCode.E;
     
     private PlayerMovement movement;
 
