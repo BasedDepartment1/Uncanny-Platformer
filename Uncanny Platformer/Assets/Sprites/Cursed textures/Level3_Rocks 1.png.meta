@@ -1,0 +1,5016 @@
+fileFormatVersion: 2
+guid: 1bc7482f394eb4b7e9115e023136c577
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5954846717304725899
+    second: Level3_Rocks 1_0
+  - first:
+      213: -8273303327979401329
+    second: Level3_Rocks 1_1
+  - first:
+      213: 6213003368971167822
+    second: Level3_Rocks 1_2
+  - first:
+      213: 8055087651887739366
+    second: Level3_Rocks 1_3
+  - first:
+      213: 6358576231254082169
+    second: Level3_Rocks 1_4
+  - first:
+      213: -4494247401094078861
+    second: Level3_Rocks 1_5
+  - first:
+      213: -6426582924633903373
+    second: Level3_Rocks 1_6
+  - first:
+      213: 3739582920594093134
+    second: Level3_Rocks 1_7
+  - first:
+      213: 4952415730369421269
+    second: Level3_Rocks 1_8
+  - first:
+      213: 5066787559572128356
+    second: Level3_Rocks 1_9
+  - first:
+      213: -4629227881091107374
+    second: Level3_Rocks 1_10
+  - first:
+      213: -5325787612817075759
+    second: Level3_Rocks 1_11
+  - first:
+      213: -5281458895572877414
+    second: Level3_Rocks 1_12
+  - first:
+      213: -8132118974592948661
+    second: Level3_Rocks 1_13
+  - first:
+      213: 3160206910131398741
+    second: Level3_Rocks 1_14
+  - first:
+      213: -4771267857739836521
+    second: Level3_Rocks 1_15
+  - first:
+      213: 1366332182008809820
+    second: Level3_Rocks 1_16
+  - first:
+      213: 6892946119286132186
+    second: Level3_Rocks 1_17
+  - first:
+      213: 5312480174981874536
+    second: Level3_Rocks 1_18
+  - first:
+      213: -3594327035798343704
+    second: Level3_Rocks 1_19
+  - first:
+      213: -7350630112921818926
+    second: Level3_Rocks 1_20
+  - first:
+      213: 8763477909860937270
+    second: Level3_Rocks 1_21
+  - first:
+      213: -3423204571190758048
+    second: Level3_Rocks 1_22
+  - first:
+      213: 2299356193179109903
+    second: Level3_Rocks 1_23
+  - first:
+      213: -1689327884413183413
+    second: Level3_Rocks 1_24
+  - first:
+      213: -5764564253471158363
+    second: Level3_Rocks 1_25
+  - first:
+      213: 2559826842618385198
+    second: Level3_Rocks 1_26
+  - first:
+      213: -4043155801264834306
+    second: Level3_Rocks 1_27
+  - first:
+      213: -540149254935762962
+    second: Level3_Rocks 1_28
+  - first:
+      213: 8418420152008283126
+    second: Level3_Rocks 1_29
+  - first:
+      213: -8772215438916450537
+    second: Level3_Rocks 1_30
+  - first:
+      213: -3827792556173746781
+    second: Level3_Rocks 1_31
+  - first:
+      213: 476410538424117230
+    second: Level3_Rocks 1_32
+  - first:
+      213: 8429952344607468886
+    second: Level3_Rocks 1_33
+  - first:
+      213: 7386947630211038984
+    second: Level3_Rocks 1_34
+  - first:
+      213: -6752801630081994541
+    second: Level3_Rocks 1_35
+  - first:
+      213: 6181768715470819286
+    second: Level3_Rocks 1_36
+  - first:
+      213: -7948105781629417226
+    second: Level3_Rocks 1_37
+  - first:
+      213: 5548783996755213886
+    second: Level3_Rocks 1_38
+  - first:
+      213: 7683283480296768589
+    second: Level3_Rocks 1_39
+  - first:
+      213: -6061950184892793518
+    second: Level3_Rocks 1_40
+  - first:
+      213: -5221618462689511817
+    second: Level3_Rocks 1_41
+  - first:
+      213: -2723537550453856755
+    second: Level3_Rocks 1_42
+  - first:
+      213: 6420717647827393077
+    second: Level3_Rocks 1_43
+  - first:
+      213: -2939075531983867031
+    second: Level3_Rocks 1_44
+  - first:
+      213: 1704880227953142774
+    second: Level3_Rocks 1_45
+  - first:
+      213: -6977378403579320540
+    second: Level3_Rocks 1_46
+  - first:
+      213: 7092481334076363201
+    second: Level3_Rocks 1_47
+  - first:
+      213: 1933735753422111740
+    second: Level3_Rocks 1_48
+  - first:
+      213: 3617296184820417168
+    second: Level3_Rocks 1_49
+  - first:
+      213: -8380148884745324914
+    second: Level3_Rocks 1_50
+  - first:
+      213: 420668161218788760
+    second: Level3_Rocks 1_51
+  - first:
+      213: -3986614483999814011
+    second: Level3_Rocks 1_52
+  - first:
+      213: 226883233308602682
+    second: Level3_Rocks 1_53
+  - first:
+      213: -1861648817732893066
+    second: Level3_Rocks 1_54
+  - first:
+      213: -8652855056976035087
+    second: Level3_Rocks 1_55
+  - first:
+      213: -1133025801016504140
+    second: Level3_Rocks 1_56
+  - first:
+      213: -8037038231260468549
+    second: Level3_Rocks 1_57
+  - first:
+      213: 2129298417748806520
+    second: Level3_Rocks 1_58
+  - first:
+      213: -4259965238019023630
+    second: Level3_Rocks 1_59
+  - first:
+      213: -5083092459392618181
+    second: Level3_Rocks 1_60
+  - first:
+      213: -3343544775446338248
+    second: Level3_Rocks 1_61
+  - first:
+      213: 8662451690970139509
+    second: Level3_Rocks 1_62
+  - first:
+      213: -265157268372070635
+    second: Level3_Rocks 1_63
+  - first:
+      213: 350771717633561112
+    second: Level3_Rocks 1_64
+  - first:
+      213: 1853221970085027554
+    second: Level3_Rocks 1_65
+  - first:
+      213: 1485731287554218440
+    second: Level3_Rocks 1_66
+  - first:
+      213: 5375837707007953387
+    second: Level3_Rocks 1_67
+  - first:
+      213: 4689606431106062209
+    second: Level3_Rocks 1_68
+  - first:
+      213: 4328908519561007833
+    second: Level3_Rocks 1_69
+  - first:
+      213: -6659831796974145991
+    second: Level3_Rocks 1_70
+  - first:
+      213: 2925984361650155513
+    second: Level3_Rocks 1_71
+  - first:
+      213: 8705774473325763498
+    second: Level3_Rocks 1_72
+  - first:
+      213: -6706501620184514975
+    second: Level3_Rocks 1_73
+  - first:
+      213: -9116208352069776764
+    second: Level3_Rocks 1_74
+  - first:
+      213: 4697787479468724090
+    second: Level3_Rocks 1_75
+  - first:
+      213: -4381575413771045143
+    second: Level3_Rocks 1_76
+  - first:
+      213: -6409906739132503698
+    second: Level3_Rocks 1_77
+  - first:
+      213: -7170374139552285929
+    second: Level3_Rocks 1_78
+  - first:
+      213: 8182110604972120597
+    second: Level3_Rocks 1_79
+  - first:
+      213: 7680684331424957558
+    second: Level3_Rocks 1_80
+  - first:
+      213: -8701773276784263605
+    second: Level3_Rocks 1_81
+  - first:
+      213: -7843488679732587194
+    second: Level3_Rocks 1_82
+  - first:
+      213: 7587359036874991053
+    second: Level3_Rocks 1_83
+  - first:
+      213: -3970532923735653017
+    second: Level3_Rocks 1_84
+  - first:
+      213: -8519461315515149857
+    second: Level3_Rocks 1_85
+  - first:
+      213: 6221732769898072639
+    second: Level3_Rocks 1_86
+  - first:
+      213: -3769095664490359363
+    second: Level3_Rocks 1_87
+  - first:
+      213: -5097808479142095183
+    second: Level3_Rocks 1_88
+  - first:
+      213: -3067410421329505714
+    second: Level3_Rocks 1_89
+  - first:
+      213: 8419999153127487168
+    second: Level3_Rocks 1_90
+  - first:
+      213: -1404717892843513176
+    second: Level3_Rocks 1_91
+  - first:
+      213: -5430201331300698384
+    second: Level3_Rocks 1_92
+  - first:
+      213: -1708745186464719855
+    second: Level3_Rocks 1_93
+  - first:
+      213: 1751766465645370881
+    second: Level3_Rocks 1_94
+  - first:
+      213: 563878399289163679
+    second: Level3_Rocks 1_95
+  - first:
+      213: -6532190449185738472
+    second: Level3_Rocks 1_96
+  - first:
+      213: -8232467471063980757
+    second: Level3_Rocks 1_97
+  - first:
+      213: -5992068846795274009
+    second: Level3_Rocks 1_98
+  - first:
+      213: 2292978815962852236
+    second: Level3_Rocks 1_99
+  - first:
+      213: -2289745988628961176
+    second: Level3_Rocks 1_100
+  - first:
+      213: 2537119216454435598
+    second: Level3_Rocks 1_101
+  - first:
+      213: -6433525885359329008
+    second: Level3_Rocks 1_102
+  - first:
+      213: 3758983973530633164
+    second: Level3_Rocks 1_103
+  - first:
+      213: -9161487798476053559
+    second: Level3_Rocks 1_104
+  - first:
+      213: 7297780337862927246
+    second: Level3_Rocks 1_105
+  - first:
+      213: 8657134757244732467
+    second: Level3_Rocks 1_106
+  - first:
+      213: -7307957200952387474
+    second: Level3_Rocks 1_107
+  - first:
+      213: 1843201836792389259
+    second: Level3_Rocks 1_108
+  - first:
+      213: -3740004464763693040
+    second: Level3_Rocks 1_109
+  - first:
+      213: -2430282713651077670
+    second: Level3_Rocks 1_110
+  - first:
+      213: 5344875540225833983
+    second: Level3_Rocks 1_111
+  - first:
+      213: 910024606607694861
+    second: Level3_Rocks 1_112
+  - first:
+      213: -1597231409796150771
+    second: Level3_Rocks 1_113
+  - first:
+      213: -2733993472000875868
+    second: Level3_Rocks 1_114
+  - first:
+      213: -2755945652210956622
+    second: Level3_Rocks 1_115
+  - first:
+      213: 4613298384676523858
+    second: Level3_Rocks 1_116
+  - first:
+      213: -2607404318052692743
+    second: Level3_Rocks 1_117
+  - first:
+      213: -8906448760108139640
+    second: Level3_Rocks 1_118
+  - first:
+      213: -7975249810215097923
+    second: Level3_Rocks 1_119
+  - first:
+      213: 1996662778372712487
+    second: Level3_Rocks 1_120
+  - first:
+      213: 8098179102876747859
+    second: Level3_Rocks 1_121
+  - first:
+      213: -5180785376708326802
+    second: Level3_Rocks 1_122
+  - first:
+      213: -2953372412986125823
+    second: Level3_Rocks 1_123
+  - first:
+      213: -3949385562025414317
+    second: Level3_Rocks 1_124
+  - first:
+      213: -5510530921203097293
+    second: Level3_Rocks 1_125
+  - first:
+      213: 6395000948992681925
+    second: Level3_Rocks 1_126
+  - first:
+      213: 1267890254662419882
+    second: Level3_Rocks 1_127
+  - first:
+      213: -3949813924669300202
+    second: Level3_Rocks 1_128
+  - first:
+      213: -1396868339287452889
+    second: Level3_Rocks 1_129
+  - first:
+      213: -3049453598272459309
+    second: Level3_Rocks 1_130
+  - first:
+      213: 3344730937864600358
+    second: Level3_Rocks 1_131
+  - first:
+      213: 2098406401595036256
+    second: Level3_Rocks 1_132
+  - first:
+      213: -3084352295102294840
+    second: Level3_Rocks 1_133
+  - first:
+      213: -65503337474441285
+    second: Level3_Rocks 1_134
+  - first:
+      213: -2970587470504355321
+    second: Level3_Rocks 1_135
+  - first:
+      213: -1424683687428429867
+    second: Level3_Rocks 1_136
+  - first:
+      213: 7366439590770438352
+    second: Level3_Rocks 1_137
+  - first:
+      213: -6184569834470688214
+    second: Level3_Rocks 1_138
+  - first:
+      213: -7183352694210944073
+    second: Level3_Rocks 1_139
+  - first:
+      213: -7100505114522685020
+    second: Level3_Rocks 1_140
+  - first:
+      213: 6177936037457608502
+    second: Level3_Rocks 1_141
+  - first:
+      213: 2186190313982149565
+    second: Level3_Rocks 1_142
+  - first:
+      213: -5212399604751148973
+    second: Level3_Rocks 1_143
+  - first:
+      213: -4074506087626734498
+    second: Level3_Rocks 1_144
+  - first:
+      213: 6027572441465896187
+    second: Level3_Rocks 1_145
+  - first:
+      213: -2687797423195097957
+    second: Level3_Rocks 1_146
+  - first:
+      213: 8652856196174200260
+    second: Level3_Rocks 1_147
+  - first:
+      213: 2560964042677131138
+    second: Level3_Rocks 1_148
+  - first:
+      213: -8367483551856618102
+    second: Level3_Rocks 1_149
+  - first:
+      213: -4683606906980626554
+    second: Level3_Rocks 1_150
+  - first:
+      213: -7884470480045747811
+    second: Level3_Rocks 1_151
+  - first:
+      213: 4976700196181332600
+    second: Level3_Rocks 1_152
+  - first:
+      213: 3783011645430247734
+    second: Level3_Rocks 1_153
+  - first:
+      213: -6239266439469856604
+    second: Level3_Rocks 1_154
+  - first:
+      213: 5354147492593064498
+    second: Level3_Rocks 1_155
+  - first:
+      213: 7128346380085060269
+    second: Level3_Rocks 1_156
+  - first:
+      213: -285943974560582215
+    second: Level3_Rocks 1_157
+  - first:
+      213: -2362816691911738710
+    second: Level3_Rocks 1_158
+  - first:
+      213: 3540871815049845688
+    second: Level3_Rocks 1_159
+  - first:
+      213: 801017629828826687
+    second: Level3_Rocks 1_160
+  - first:
+      213: -1854170758615176955
+    second: Level3_Rocks 1_161
+  - first:
+      213: 3173120578813743018
+    second: Level3_Rocks 1_162
+  - first:
+      213: -4450891591602195028
+    second: Level3_Rocks 1_163
+  - first:
+      213: 240999779116950889
+    second: Level3_Rocks 1_164
+  - first:
+      213: -3543431427652603465
+    second: Level3_Rocks 1_165
+  - first:
+      213: -2324593565278585648
+    second: Level3_Rocks 1_166
+  - first:
+      213: -5228562320479914329
+    second: Level3_Rocks 1_167
+  - first:
+      213: -2588179029735785392
+    second: Level3_Rocks 1_168
+  - first:
+      213: -8032389502747423178
+    second: Level3_Rocks 1_169
+  - first:
+      213: 2686249375181561955
+    second: Level3_Rocks 1_170
+  - first:
+      213: -9131694359947366779
+    second: Level3_Rocks 1_171
+  - first:
+      213: 2865329881957037082
+    second: Level3_Rocks 1_172
+  - first:
+      213: 6535812227737700017
+    second: Level3_Rocks 1_173
+  - first:
+      213: -219252687404117062
+    second: Level3_Rocks 1_174
+  - first:
+      213: -5644108781767972629
+    second: Level3_Rocks 1_175
+  - first:
+      213: 2602471247015128034
+    second: Level3_Rocks 1_176
+  - first:
+      213: 7109560411359174511
+    second: Level3_Rocks 1_177
+  - first:
+      213: 2314788966925130948
+    second: Level3_Rocks 1_178
+  - first:
+      213: -6693533199535795177
+    second: Level3_Rocks 1_179
+  - first:
+      213: -6808209289585811323
+    second: Level3_Rocks 1_180
+  - first:
+      213: -551406687762593639
+    second: Level3_Rocks 1_181
+  - first:
+      213: -490782566648954528
+    second: Level3_Rocks 1_182
+  - first:
+      213: 6310335113566301336
+    second: Level3_Rocks 1_183
+  - first:
+      213: 8670717497946226268
+    second: Level3_Rocks 1_184
+  - first:
+      213: 2816647927453048914
+    second: Level3_Rocks 1_185
+  - first:
+      213: 431064034566499638
+    second: Level3_Rocks 1_186
+  - first:
+      213: -2506916042676937273
+    second: Level3_Rocks 1_187
+  - first:
+      213: -3589494251766067810
+    second: Level3_Rocks 1_188
+  - first:
+      213: -1291438925976146273
+    second: Level3_Rocks 1_189
+  - first:
+      213: 8076209156019985737
+    second: Level3_Rocks 1_190
+  - first:
+      213: -6670189183922995216
+    second: Level3_Rocks 1_191
+  - first:
+      213: 901641101164867029
+    second: Level3_Rocks 1_192
+  - first:
+      213: -3338301791202681596
+    second: Level3_Rocks 1_193
+  - first:
+      213: -7740075956938087584
+    second: Level3_Rocks 1_194
+  - first:
+      213: 2196430958668436884
+    second: Level3_Rocks 1_195
+  - first:
+      213: 1248382086145971899
+    second: Level3_Rocks 1_196
+  - first:
+      213: 6608912950413284651
+    second: Level3_Rocks 1_197
+  - first:
+      213: -5740709030125888758
+    second: Level3_Rocks 1_198
+  - first:
+      213: -6300410745832401368
+    second: Level3_Rocks 1_199
+  - first:
+      213: 2073829951549332090
+    second: Level3_Rocks 1_200
+  - first:
+      213: 1128864336058666723
+    second: Level3_Rocks 1_201
+  - first:
+      213: -5546121851198688949
+    second: Level3_Rocks 1_202
+  - first:
+      213: -739675119697267206
+    second: Level3_Rocks 1_203
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level3_Rocks 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8169dc0a8dd3a250800000000000000
+      internalID: 5954846717304725899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f0bb005725f2d80800000000000000
+      internalID: -8273303327979401329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48e4db65a5093650800000000000000
+      internalID: 6213003368971167822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1776daa8b69cf60800000000000000
+      internalID: 8055087651887739366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9724425a4633e3850800000000000000
+      internalID: 6358576231254082169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e901ddcc931a1c0800000000000000
+      internalID: -4494247401094078861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3feea9921e030d6a0800000000000000
+      internalID: -6426582924633903373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_7
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44f0266adaa5e330800000000000000
+      internalID: 3739582920594093134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfd9b42ed38ab440800000000000000
+      internalID: 4952415730369421269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4624aa0c078d05640800000000000000
+      internalID: 5066787559572128356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5fa33d4cda1cfb0800000000000000
+      internalID: -4629227881091107374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1dcd422600716b0800000000000000
+      internalID: -5325787612817075759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f3d89ed1d74b6b0800000000000000
+      internalID: -5281458895572877414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_13
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b466c20e0e8e42f80800000000000000
+      internalID: -8132118974592948661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558ed17f07f4bdb20800000000000000
+      internalID: 3160206910131398741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_15
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 403
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7939d23a92d09cdb0800000000000000
+      internalID: -4771267857739836521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59c1d161ef26f210800000000000000
+      internalID: 1366332182008809820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add05ff99f9a8af50800000000000000
+      internalID: 6892946119286132186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_18
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863891a8298b9b940800000000000000
+      internalID: 5312480174981874536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef28a0ca926e1ec0800000000000000
+      internalID: -3594327035798343704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8610c8bd05df990800000000000000
+      internalID: -7350630112921818926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e6e366ab02e9970800000000000000
+      internalID: 8763477909860937270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0657ea454955e70d0800000000000000
+      internalID: -3423204571190758048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a09827644f8ef10800000000000000
+      internalID: 2299356193179109903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ad3645d3d4e88e0800000000000000
+      internalID: -1689327884413183413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afcfea7a572000b0800000000000000
+      internalID: -5764564253471158363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2357c863f4568320800000000000000
+      internalID: 2559826842618385198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_27
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8bc066833d3e7c0800000000000000
+      internalID: -4043155801264834306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_28
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7acdd4d110188f0800000000000000
+      internalID: -540149254935762962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_29
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3917a868c34d470800000000000000
+      internalID: 8418420152008283126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71700361984d24680800000000000000
+      internalID: -8772215438916450537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_31
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 387
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad116f53f2f0eac0800000000000000
+      internalID: -3827792556173746781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7a50e4cdc8c9600800000000000000
+      internalID: 476410538424117230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_33
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65daccd5ef43df470800000000000000
+      internalID: 8429952344607468886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_34
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f74216bb5b38660800000000000000
+      internalID: 7386947630211038984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_35
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0b84002ba3942a0800000000000000
+      internalID: -6752801630081994541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfc241f4ed0ac550800000000000000
+      internalID: 6181768715470819286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f800c807e7a2b190800000000000000
+      internalID: -7948105781629417226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3e77f575ad310d40800000000000000
+      internalID: 5548783996755213886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4447b71e9180aa60800000000000000
+      internalID: 7683283480296768589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25df957ac60afdba0800000000000000
+      internalID: -6061950184892793518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77635ca6ca51987b0800000000000000
+      internalID: -5221618462689511817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06a2cc170d043ad0800000000000000
+      internalID: -2723537550453856755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 371
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a55d9aea8fa1950800000000000000
+      internalID: 6420717647827393077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9633f04206e4637d0800000000000000
+      internalID: -2939075531983867031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_45
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fbebb3d883f8a710800000000000000
+      internalID: 1704880227953142774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4272c274f4f5b2f90800000000000000
+      internalID: -6977378403579320540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_47
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1d5bd123e8d6260800000000000000
+      internalID: 7092481334076363201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_48
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf382302c6206da10800000000000000
+      internalID: 1933735753422111740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_49
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 092c89ff6b7333230800000000000000
+      internalID: 3617296184820417168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_50
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e867edf3dfab3bb80800000000000000
+      internalID: -8380148884745324914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_51
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d33cdb67386d500800000000000000
+      internalID: 420668161218788760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_52
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e83c0bf33bca8c0800000000000000
+      internalID: -3986614483999814011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_53
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 355
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31f9de391d062300800000000000000
+      internalID: 226883233308602682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676418283481a26e0800000000000000
+      internalID: -1861648817732893066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f24004ab22eae780800000000000000
+      internalID: -8652855056976035087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_56
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b01f09790fa640f0800000000000000
+      internalID: -1133025801016504140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_57
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba6c7b8f44b67090800000000000000
+      internalID: -8037038231260468549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b08b221a9cc8d10800000000000000
+      internalID: 2129298417748806520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_59
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 339
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc1d50bf2091e4c0800000000000000
+      internalID: -4259965238019023630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31bf6de65a3579b0800000000000000
+      internalID: -5083092459392618181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83568e8ddb75991d0800000000000000
+      internalID: -3343544775446338248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bc144dae5373870800000000000000
+      internalID: 8662451690970139509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fd1198ed8f15cf0800000000000000
+      internalID: -265157268372070635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8125dcac4013ed400800000000000000
+      internalID: 350771717633561112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 323
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee1ed02097f7b910800000000000000
+      internalID: 1853221970085027554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_66
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 307
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c95a5afbb06e9410800000000000000
+      internalID: 1485731287554218440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_67
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 307
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be90c5089efca9a40800000000000000
+      internalID: 5375837707007953387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_68
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 307
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187d676d334d41140800000000000000
+      internalID: 4689606431106062209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_69
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d2989dec5f531c30800000000000000
+      internalID: 4328908519561007833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e218514468393a0800000000000000
+      internalID: -6659831796974145991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_71
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff618e364f2b9820800000000000000
+      internalID: 2925984361650155513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_72
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 291
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aabde3122cf11d870800000000000000
+      internalID: 8705774473325763498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_73
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ef15b1f48bde2a0800000000000000
+      internalID: -6706501620184514975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_74
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a8e64bdc8bc7180800000000000000
+      internalID: -9116208352069776764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_75
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7fc20892d4e13140800000000000000
+      internalID: 4697787479468724090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6779130648133c0800000000000000
+      internalID: -4381575413771045143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_77
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69ef9a28cf6b07a0800000000000000
+      internalID: -6409906739132503698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_78
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bb659d5b6bd7c90800000000000000
+      internalID: -7170374139552285929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ad15a9e32bc8170800000000000000
+      internalID: 8182110604972120597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_80
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 275
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6744e7694b5479a60800000000000000
+      internalID: 7680684331424957558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e79490f471d3780800000000000000
+      internalID: -8701773276784263605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645ddb43a94562390800000000000000
+      internalID: -7843488679732587194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5a84038d6bb4960800000000000000
+      internalID: 7587359036874991053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_84
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7654eb7b755d5e8c0800000000000000
+      internalID: -3970532923735653017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_85
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd19903521bc4c980800000000000000
+      internalID: -8519461315515149857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_86
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a8e257df8085650800000000000000
+      internalID: 6221732769898072639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_87
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55691767b71bbc0800000000000000
+      internalID: -3769095664490359363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_88
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 259
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6d2c39232f049b0800000000000000
+      internalID: -5097808479142095183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_89
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e42d250497e5e65d0800000000000000
+      internalID: -3067410421329505714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_90
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6f0436e98d9d470800000000000000
+      internalID: 8419999153127487168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_91
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5d6bd480718ce0800000000000000
+      internalID: -1404717892843513176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_92
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6f7fcd8ac04a4b0800000000000000
+      internalID: -5430201331300698384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_93
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11c9c156e415948e0800000000000000
+      internalID: -1708745186464719855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_94
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10edb3ab1568f4810800000000000000
+      internalID: 1751766465645370881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f7526aa6c43d700800000000000000
+      internalID: 563878399289163679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811b51f356ff855a0800000000000000
+      internalID: -6532190449185738472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_97
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25e54ad37660cd80800000000000000
+      internalID: -8232467471063980757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_98
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e845159125e7dca0800000000000000
+      internalID: -5992068846795274009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_99
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 243
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b26fa951c42df10800000000000000
+      internalID: 2292978815962852236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86825e9a7203930e0800000000000000
+      internalID: -2289745988628961176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_101
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0385913c78a53320800000000000000
+      internalID: 2537119216454435598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_102
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01170e52b4687b6a0800000000000000
+      internalID: -6433525885359329008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_103
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc30eaa02089a2430800000000000000
+      internalID: 3758983973530633164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_104
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c362cd036bdbd080800000000000000
+      internalID: -9161487798476053559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e83662f4d8ce64560800000000000000
+      internalID: 7297780337862927246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_106
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334824ab132542870800000000000000
+      internalID: 8657134757244732467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_107
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68997b15abe49a90800000000000000
+      internalID: -7307957200952387474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_108
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e9b5b0e4e549910800000000000000
+      internalID: 1843201836792389259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_109
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 227
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018926331c5d81cc0800000000000000
+      internalID: -3740004464763693040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add1e058fb6e54ed0800000000000000
+      internalID: -2430282713651077670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_111
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbb5d74cffcc2a40800000000000000
+      internalID: 5344875540225833983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_112
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c57b5ee8e01ac00800000000000000
+      internalID: 910024606607694861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_113
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a010bce7e75d9e0800000000000000
+      internalID: -1597231409796150771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_114
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2a62b2c67ee0ad0800000000000000
+      internalID: -2733993472000875868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_115
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b60fabe70ae0c9d0800000000000000
+      internalID: -2755945652210956622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f0785407ab50040800000000000000
+      internalID: 4613298384676523858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_117
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 211
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fc46ac5693a0dbd0800000000000000
+      internalID: -2607404318052692743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88b39838a00f56480800000000000000
+      internalID: -8906448760108139640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_119
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9a0236d88325190800000000000000
+      internalID: -7975249810215097923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_120
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7286629d73295bb10800000000000000
+      internalID: 1996662778372712487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_121
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358c572fcf2826070800000000000000
+      internalID: 8098179102876747859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_122
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a03cb16272a18b0800000000000000
+      internalID: -5180785376708326802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_123
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102168220738307d0800000000000000
+      internalID: -2953372412986125823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_124
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3513b6e81c6f039c0800000000000000
+      internalID: -3949385562025414317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_125
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33122edb259a683b0800000000000000
+      internalID: -5510530921203097293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_126
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 195
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7aefe1b7b9fb850800000000000000
+      internalID: 6395000948992681925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa545531873789110800000000000000
+      internalID: 1267890254662419882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_128
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612e13b99217f29c0800000000000000
+      internalID: -3949813924669300202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_129
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72318c675a35d9ce0800000000000000
+      internalID: -1396868339287452889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_130
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddeeebeb1a2ea5d0800000000000000
+      internalID: -3049453598272459309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_131
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bbdac111fda6e20800000000000000
+      internalID: 3344730937864600358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_132
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 179
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0625a7121890f1d10800000000000000
+      internalID: 2098406401595036256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_133
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c45440eded2235d0800000000000000
+      internalID: -3084352295102294840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_134
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfbb36cf09471ff0800000000000000
+      internalID: -65503337474441285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_135
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a9c563f6a56c6d0800000000000000
+      internalID: -2970587470504355321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_136
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d7e88d0cb18a3ce0800000000000000
+      internalID: -1424683687428429867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0fe3b57c9da3660800000000000000
+      internalID: 7366439590770438352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_138
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a37c7b08efb2aa0800000000000000
+      internalID: -6184569834470688214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_139
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 163
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3263d98ca9f4c90800000000000000
+      internalID: -7183352694210944073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1f70be730f57d90800000000000000
+      internalID: -7100505114522685020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_141
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fbebd08107cb550800000000000000
+      internalID: 6177936037457608502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_142
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db34e44f188e65e10800000000000000
+      internalID: 2186190313982149565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_143
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358db6b0d26d9a7b0800000000000000
+      internalID: -5212399604751148973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_144
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5487db0d427477c0800000000000000
+      internalID: -4074506087626734498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_145
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc3287333d36a350800000000000000
+      internalID: 6027572441465896187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_146
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94fe32fb7603bad0800000000000000
+      internalID: -2687797423195097957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_147
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 147
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd30899dde151870800000000000000
+      internalID: 8652856196174200260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_148
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287915e6a3f5a8320800000000000000
+      internalID: 2560964042677131138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_149
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8599abda0ab0eb80800000000000000
+      internalID: -8367483551856618102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_150
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f8ad9355c700fb0800000000000000
+      internalID: -4683606906980626554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_151
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91d1d24fdbb49290800000000000000
+      internalID: -7884470480045747811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_152
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8725103f57ac01540800000000000000
+      internalID: 4976700196181332600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_153
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631390b5c05ff7430800000000000000
+      internalID: 3783011645430247734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_154
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a80268fa3ca969a0800000000000000
+      internalID: -6239266439469856604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_155
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 131
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ade0be6c0cd4a40800000000000000
+      internalID: 5354147492593064498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_156
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da269ecd349fce260800000000000000
+      internalID: 7128346380085060269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_157
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b537aa587f180cf0800000000000000
+      internalID: -285943974560582215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_158
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaabc39ccb6953fd0800000000000000
+      internalID: -2362816691911738710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_159
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb1d3bc724b32130800000000000000
+      internalID: 3540871815049845688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_160
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36c5c45a49cd1b00800000000000000
+      internalID: 801017629828826687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_161
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50963d3d489a446e0800000000000000
+      internalID: -1854170758615176955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_162
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aafcca1ca50390c20800000000000000
+      internalID: 3173120578813743018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_163
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca537c4eda14b32c0800000000000000
+      internalID: -4450891591602195028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_164
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 115
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965a631b504385300800000000000000
+      internalID: 240999779116950889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_165
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1bfc4f3e333dec0800000000000000
+      internalID: -3543431427652603465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_166
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc3966f7726dbfd0800000000000000
+      internalID: -2324593565278585648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_167
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a67dc9854a6077b0800000000000000
+      internalID: -5228562320479914329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_168
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05cbb7d92e0f41cd0800000000000000
+      internalID: -2588179029735785392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_169
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ec92ffd48378090800000000000000
+      internalID: -8032389502747423178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_170
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360efc90399774520800000000000000
+      internalID: 2686249375181561955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_171
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e26e58c54b54180800000000000000
+      internalID: -9131694359947366779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_172
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 99
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a147c52b852b3c720800000000000000
+      internalID: 2865329881957037082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_173
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6c5f8c79ed3ba50800000000000000
+      internalID: 6535812227737700017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_174
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab35a3ba7de05fcf0800000000000000
+      internalID: -219252687404117062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_175
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8ae0d77f81ca1b0800000000000000
+      internalID: -5644108781767972629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_176
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb21888fc5dd1420800000000000000
+      internalID: 2602471247015128034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_177
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f5e3ca68b3aa260800000000000000
+      internalID: 7109560411359174511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_178
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccd0971d48cf1020800000000000000
+      internalID: 2314788966925130948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_179
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 83
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7149265d40bcb13a0800000000000000
+      internalID: -6693533199535795177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58029b9f8b16481a0800000000000000
+      internalID: -6808209289585811323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_181
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998c229f9820958f0800000000000000
+      internalID: -551406687762593639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_182
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0614fec1bd36039f0800000000000000
+      internalID: -490782566648954528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_183
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 67
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c2bc92a50d29750800000000000000
+      internalID: 6310335113566301336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e39dcff93945870800000000000000
+      internalID: 8670717497946226268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_185
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250ed25ed5eb61720800000000000000
+      internalID: 2816647927453048914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_186
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d68cf94727bf500800000000000000
+      internalID: 431064034566499638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_187
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd53823425a53dd0800000000000000
+      internalID: -2506916042676937273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_188
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d4d28fefd8f2ec0800000000000000
+      internalID: -3589494251766067810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_189
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e6410a323e31ee0800000000000000
+      internalID: -1291438925976146273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_190
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d14541075741070800000000000000
+      internalID: 8076209156019985737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_191
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fffd93074abe63a0800000000000000
+      internalID: -6670189183922995216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_192
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dde2ddedc5438c00800000000000000
+      internalID: 901641101164867029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_193
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40d505e3538fba1d0800000000000000
+      internalID: -3338301791202681596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_194
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063e9240de9b59490800000000000000
+      internalID: -7740075956938087584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_195
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 19
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4955a19d15a4b7e10800000000000000
+      internalID: 2196430958668436884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_196
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb611b4a4e4235110800000000000000
+      internalID: 1248382086145971899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_197
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25dcd8105397bb50800000000000000
+      internalID: 6608912950413284651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_198
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b187c7d87e450b0800000000000000
+      internalID: -5740709030125888758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_199
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8261b93cec17098a0800000000000000
+      internalID: -6300410745832401368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_200
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ad9a27a59b7cc10800000000000000
+      internalID: 2073829951549332090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_201
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee4266f1288aaf00800000000000000
+      internalID: 1128864336058666723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_202
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41354a9f873803b0800000000000000
+      internalID: -5546121851198688949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level3_Rocks 1_203
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 3
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5ff39c5652cb5f0800000000000000
+      internalID: -739675119697267206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

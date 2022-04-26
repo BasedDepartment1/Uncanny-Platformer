@@ -1,13 +1,5 @@
 using UnityEngine;
 
-
-public enum Directions
-{
-    Left = -1,
-    None = 0,
-    Right = 1
-}
-
 public class EnemyPatrol : MonoBehaviour
 {
     [Header("Patrol Objects")]
