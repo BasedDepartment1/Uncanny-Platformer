@@ -38,7 +38,8 @@ public class EnemyPatrol : MonoBehaviour
 
     void Update()
     {
-        if (movingRight)
+        
+        if (!movingRight)
         {
             if (enemy.position.x < rightEdge.position.x)
             {
@@ -49,6 +50,7 @@ public class EnemyPatrol : MonoBehaviour
                 TurnAround();
             }
         }
+        
         else
         {
             if (enemy.position.x >= leftEdge.position.x)
@@ -66,7 +68,7 @@ public class EnemyPatrol : MonoBehaviour
     {
         animator.SetBool("isMoving", true);
         standTimer = 0;
-        enemy.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
+        enemy.localScale = new Vector3(Mathf.Abs(initialScale.x) * (int)direction, 
             initialScale.y, initialScale.z);
         enemyBody.velocity = new Vector2((int)direction * maxSpeed, enemyBody.velocity.y);
     }
