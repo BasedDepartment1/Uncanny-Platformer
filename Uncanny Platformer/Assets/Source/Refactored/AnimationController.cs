@@ -1,16 +1,12 @@
+using System;
+using Source.Refactored;
 using UnityEngine;
 
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] private Player player;
-    
-    private const string Idle = "Idle";
-    private const string Run = "Run";
-    private const string Jump = "jump";
-    private const string Fall = "Fall";
-    private const string Throw = "ThrowWeapon";
-    private const string Death = "Death";
-    private const string Hurt = "Hurt";
+    [SerializeField] private float rangedAttackDelay;
+    private readonly AnimStates animStates;
 
     private string currentState;
     private bool isAttacking;
@@ -19,7 +15,6 @@ public class AnimationController : MonoBehaviour
     
 
     private Animator animator;
-    // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -28,61 +23,58 @@ public class AnimationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!player.health.isDead)
+        if (player.health.isDead)
         {
-            if (!player.health.wasHurt)
-            {
-                var velocity = player.body.velocity;
-                if (!isThrowing && !isAttacking && !isHurting)
-                {
-                    if (player.IsGrounded() && !isAttacking)
-                    {
-                        ChangeAnimationState(player.movement.isRunning ? Run : Idle);
-                    }
-                }
-
-                if (player.movement.isJumping)
-                {
-                    if (velocity.y > 0)
-                    {
-                        ChangeAnimationState(Jump);
-                    }
-
-                    player.movement.isJumping = false;
-                }
-
-                if (!player.IsGrounded() && velocity.y < 0)
-                {
-                    ChangeAnimationState(Fall);
-                }
-
-                if (player.rangedCombat.isThrowStarted)
-                {
-                    player.rangedCombat.isThrowStarted = false;
-                    if (!isThrowing)
-                    {
-                        isThrowing = true;
-                        ChangeAnimationState(Throw);
-                        Invoke(nameof(EndThrow),
-                            animator.GetCurrentAnimatorStateInfo(0).length * 0.7f);
-                    }
-                }
-            }
-            else
-            {
-                player.health.wasHurt = false;
-                if (!isHurting)
-                {
-                    isHurting = true;
-                    ChangeAnimationState(Hurt);
-                    Invoke(nameof(StopHurting),
-                        animator.GetCurrentAnimatorStateInfo(0).length);
-                }
-            }
+            ChangeAnimationState(AnimStates.Death);
+            return;
         }
-        else
+        
+        if (player.health.wasHurt)
         {
-            ChangeAnimationState(Death);
+            player.health.wasHurt = false;
+            if (!isHurting)
+            {
+                isHurting = true;
+                ChangeAnimationState(AnimStates.Hurt);
+                Invoke(nameof(StopHurting),
+                    animator.GetCurrentAnimatorStateInfo(0).length);
+            }
+            return;
+        }
+        
+        
+        if (!isThrowing && !isAttacking && !isHurting && player.IsGrounded())
+        {
+            ChangeAnimationState(player.movement.isRunning ? AnimStates.Run : AnimStates.Idle);
+        }
+        
+        var velocity = player.body.velocity;
+        
+        if (player.movement.isJumping)
+        {
+            if (velocity.y > 0)
+            {
+                ChangeAnimationState(AnimStates.Jump);
+            }
+
+            player.movement.isJumping = false;
+        }
+
+        if (!player.IsGrounded() && velocity.y < 0)
+        {
+            ChangeAnimationState(AnimStates.Fall);
+        }
+
+        if (player.rangedCombat.isThrowStarted)
+        {
+            if (!isThrowing)
+            {
+                isThrowing = true;
+                ChangeAnimationState(AnimStates.Throw);
+                Invoke(nameof(EndThrow),
+                    animator.GetCurrentAnimatorStateInfo(0).length * rangedAttackDelay);
+            }
+            player.rangedCombat.isThrowStarted = false;
         }
     }
 
