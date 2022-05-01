@@ -7,10 +7,10 @@ public class Teleport : MonoBehaviour
   
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("А БЛЯТЬ");
         if (collider.gameObject.CompareTag("Player"))
         {
-            collider.transform.Translate(teleportPosition.position);
+            collider.GetComponent<Rigidbody2D>().position = 
+                (new Vector3(teleportPosition.position.x, teleportPosition.position.y, transform.position.z));
         }
     }
 }
