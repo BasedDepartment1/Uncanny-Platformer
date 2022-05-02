@@ -4,61 +4,44 @@ using UnityEngine;
 
 public class Controls : MonoBehaviour
 {
+    [Header("Player script")] [SerializeField]
+    private Player player;
+    
+    [Header("Control scheme")]
     [SerializeField] private KeyCode moveLeftKey = KeyCode.A;
     [SerializeField] private KeyCode moveRightKey = KeyCode.D;
     [SerializeField] private KeyCode jumpKey = KeyCode.W;
     [SerializeField] private KeyCode throwKey = KeyCode.R;
-    [SerializeField] private KeyCode attackKey = KeyCode.E;
     
-    private PlayerMovement movement;
-
-    private Combat combat;
-
-    private MeleeAttack attack;
-    // Start is called before the first frame update
-    void Awake()
-    {
-        movement = GetComponent<PlayerMovement>();
-        combat = GetComponent<Combat>();
-        attack = GetComponent<MeleeAttack>();
-    }
+    internal bool IsRightPressed;
+    internal bool IsLeftPressed;
+    internal bool isJumpPressed;
     
-    void Update()
-    {
-        CheckOnMoves();
-        CheckOnCombatActions();
-    }
+    internal bool isRangedAttackPressed;
 
     private void CheckOnMoves()
     {
-        if (Input.GetKey(moveLeftKey))
-        {
-            movement.MoveToDirection(Directions.Left);
-        }
-        else if (Input.GetKey(moveRightKey))
-        {
-            movement.MoveToDirection(Directions.Right);
-        }
-        else
-        {
-            movement.MoveToDirection(Directions.None);
-        }
-        
-        if (Input.GetKeyDown(jumpKey))
-        {
-            movement.Jump();
-        }
+        IsLeftPressed = Input.GetKey(moveLeftKey);
+        IsRightPressed = Input.GetKey(moveRightKey);
+        isJumpPressed = Input.GetKeyDown(jumpKey) || isJumpPressed;
+        // if (Input.GetKeyDown(jumpKey))
+        // {
+        //     isJumpPressed = true;
+        // }
     }
 
     private void CheckOnCombatActions()
     {
-        if (Input.GetKeyDown(attackKey))
-        {
-            attack.Attack();
-        }
-        if (Input.GetKeyDown(throwKey))
-        {
-            combat.Fire();
-        }
+        // if (Input.GetKeyDown(throwKey))
+        // {
+        //     isRangedAttackPressed = true;
+        // }
+        isRangedAttackPressed = Input.GetKeyDown(throwKey) || isRangedAttackPressed;
+    }
+
+    private void Update()
+    {
+        CheckOnMoves();
+        CheckOnCombatActions();
     }
 }

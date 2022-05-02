@@ -2,36 +2,57 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float MaxSpeed = 10f;
-    [SerializeField] private int MaxJumpCount = 3;
-    
+    [Header("PlayerScript")] [SerializeField]
+    private Player player;
+
+    [Header("Movement characteristics")]
+    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private int maxJumpCount = 3;
+
+    internal bool isJumping;
+    internal bool isRunning;
     private bool isOrientationRight = true;
-    private Rigidbody2D body;
     private int jumpCount;
-    private Animator animator;
-    
-    private void Awake()
+
+    private void FixedUpdate()
     {
-        body = GetComponent<Rigidbody2D>();
-        animator = gameObject.GetComponent<Animator>();
-    }
-    
-    private void Update()
-    {
-        if (body.velocity.y >= 0)
+        if (player.controls.IsLeftPressed)
         {
-            return;
+            isRunning = true;
+            MoveToDirection(Directions.Left);
         }
-        animator.SetBool("isJumping", false);
-        animator.SetBool("isFalling", true);
+        else if (player.controls.IsRightPressed)
+        {
+            isRunning = true;
+            MoveToDirection(Directions.Right);
+        }
+        else
+        {
+            isRunning = false;
+            MoveToDirection(Directions.None);
+        }
+
+        if (player.IsGrounded())
+        {
+            jumpCount = 0;
+        }
+        
+        if (player.controls.isJumpPressed)
+        {
+            isJumping = true;
+            player.controls.isJumpPressed = false;
+            Jump();
+        }
     }
 
-    public void MoveToDirection(Directions direction)
+    private void MoveToDirection(Directions direction)
     {
-        body.velocity = new Vector2((int)direction * MaxSpeed, body.velocity.y);
-        animator.SetBool("isRunning", direction != Directions.None);
+        player.body.velocity = new Vector2((int)direction * maxSpeed, 
+            player.body.velocity.y);
+        
         if ((int)direction > 0 && !isOrientationRight
-            || (int)(direction) < 0 && isOrientationRight)
+            || (int)direction < 0 && isOrientationRight)
         {
             Flip();
         }
@@ -39,29 +60,19 @@ public class PlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        var scale = transform.localScale;
+        var transform1 = transform;
+        var scale = transform1.localScale;
         scale.x *= -1;
-        transform.localScale = scale;
+        transform1.localScale = scale;
         isOrientationRight = !isOrientationRight;
     }
     
-    public void Jump()
+    private void Jump()
     {
-        animator.SetBool("isJumping", true);
-        
-        if (MaxJumpCount > jumpCount)
+        if (jumpCount < maxJumpCount)
         {
-            body.velocity = new Vector2(body.velocity.x, MaxSpeed);
+            player.body.velocity = new Vector2(player.body.velocity.x, jumpForce);
             jumpCount++;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            animator.SetBool("isFalling", false);
-            jumpCount = 0;
         }
     }
 }

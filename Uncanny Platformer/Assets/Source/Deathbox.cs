@@ -1,10 +1,7 @@
-using System;
 using UnityEngine;
 
-public class Trap : MonoBehaviour
+public class Deathbox : MonoBehaviour
 {
-    [SerializeField] private float trapDamage;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Player"))
@@ -14,7 +11,6 @@ public class Trap : MonoBehaviour
         
         var health = other.GetComponent<Health>();
 
-        health.ReduceHealthPoints(trapDamage);
-        
+        health.ReduceHealthPoints(health.CurrentHealth * 10);
     }
 }
