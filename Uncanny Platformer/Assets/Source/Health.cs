@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask enemyLayer;
-    
+
     internal bool isDead;
     internal bool wasHurt;
 
@@ -24,12 +24,8 @@ public class Health : MonoBehaviour
     
     void Awake()
     {
-        // animator = GetComponent<Animator>();
-        // if (gameObject.CompareTag("Player"))
-        // {
-        //     isPlayer = true;
-        //     controls = GetComponent<PlayerMovement>();
-        // }
+        Debug.Log(playerLayer.value);
+        Debug.Log(enemyLayer.value);
         CurrentHealth = startingHealth;
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -66,7 +62,8 @@ public class Health : MonoBehaviour
 
     private IEnumerator ActivateInvisibility()
     {
-        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, true);
+        Physics2D.IgnoreLayerCollision(MaskToLayer(playerLayer),
+            MaskToLayer(enemyLayer), true);
         for (var i = 0; i < blinkCount; i++)
         {
             var blinkTime = invisibilityDuration / (blinkCount * 2);
@@ -75,6 +72,19 @@ public class Health : MonoBehaviour
             sprite.color = Color.white;
             yield return new WaitForSeconds(blinkTime);
         }
-        Physics2D.IgnoreLayerCollision(playerLayer, enemyLayer, false);
+        Physics2D.IgnoreLayerCollision(MaskToLayer(playerLayer), 
+            MaskToLayer(enemyLayer), false);
+    }
+
+    private int MaskToLayer(LayerMask mask)
+    {
+        var layerNumber = 0;
+        while (mask.value > 1)
+        {
+            mask.value >>= 1;
+            layerNumber++;
+        }
+
+        return layerNumber;
     }
 }

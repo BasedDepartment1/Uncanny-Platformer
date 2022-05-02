@@ -5,11 +5,10 @@ using UnityEngine;
 public class AnimationController : MonoBehaviour
 {
     [SerializeField] private Player player;
-    [SerializeField] private float rangedAttackDelay;
+    [SerializeField] private float rangedAttackDelay = 0.7f;
     private readonly AnimStates animStates;
 
     private string currentState;
-    private bool isAttacking;
     private bool isThrowing;
     private bool isHurting;
     
@@ -43,7 +42,7 @@ public class AnimationController : MonoBehaviour
         }
         
         
-        if (!isThrowing && !isAttacking && !isHurting && player.IsGrounded())
+        if (!isThrowing && !isHurting && player.IsGrounded())
         {
             ChangeAnimationState(player.movement.isRunning ? AnimStates.Run : AnimStates.Idle);
         }
@@ -94,7 +93,6 @@ public class AnimationController : MonoBehaviour
         {
             return;
         }
-        // Debug.Log("Playing animation " + newState);
         currentState = newState;
         animator.Play(currentState);
     }

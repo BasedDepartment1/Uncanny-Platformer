@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Movement characteristics")]
     [SerializeField] private float maxSpeed = 10f;
-    [SerializeField] private float jumpForce;
+    [SerializeField] private float jumpForce = 10f;
     [SerializeField] private int maxJumpCount = 3;
 
     internal bool isJumping;

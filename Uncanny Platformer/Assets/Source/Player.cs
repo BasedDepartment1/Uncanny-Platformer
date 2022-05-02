@@ -42,7 +42,7 @@ public class Player : MonoBehaviour
     private void Respawn()
     {
         health.Revive();
-        transform.position = spawnPoint.position;
+        body.position = spawnPoint.position;
         controls.enabled = true;
     }
     
