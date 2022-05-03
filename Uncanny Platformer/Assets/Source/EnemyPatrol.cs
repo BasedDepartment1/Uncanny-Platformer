@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
@@ -5,36 +6,24 @@ public class EnemyPatrol : MonoBehaviour
     [Header("Patrol Objects")]
     [SerializeField] private Transform leftEdge;
     [SerializeField] private Transform rightEdge;
-    [SerializeField] private Transform enemy;
+    [SerializeField] private Enemy enemy;
     
     [Header("Patrol Timings")]
-    [SerializeField] private float standDuration;
-    [SerializeField] private float maxSpeed;
-    
+    [SerializeField] private float standDuration = 1;
     
     
     private bool movingRight;
     private float standTimer;
-    
 
-    private Vector3 initialScale;
-    private Rigidbody2D enemyBody;
-    private Animator animator;
-    
-    void Awake()
+    void FixedUpdate()
     {
-        animator = enemy.GetComponent<Animator>();
-        initialScale = enemy.localScale;
-        enemyBody = enemy.GetComponent<Rigidbody2D>();
-    }
-
-    void Update()
-    {
+        if (!enabled) return;
+        
         if (movingRight)
         {
-            if (enemy.position.x < rightEdge.position.x)
+            if (enemy.transform.position.x < rightEdge.position.x)
             {
-                MoveToDirection(Directions.Right);
+                StartMoving(Directions.Right);
             }
             else
             {
@@ -43,9 +32,9 @@ public class EnemyPatrol : MonoBehaviour
         }
         else
         {
-            if (enemy.position.x >= leftEdge.position.x)
+            if (enemy.transform.position.x >= leftEdge.position.x)
             {
-                MoveToDirection(Directions.Left);
+                StartMoving(Directions.Left);
             }
             else
             {
@@ -54,22 +43,20 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-    private void MoveToDirection(Directions direction)
-    {
-        animator.SetBool("isMoving", true);
-        standTimer = 0;
-        enemy.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
-            initialScale.y, initialScale.z);
-        enemyBody.velocity = new Vector2((int)direction * maxSpeed, enemyBody.velocity.y);
-    }
-
     private void TurnAround()
     {
-        animator.SetBool("isMoving", false);
+        enemy.movement.isMoving = false;
         standTimer += Time.deltaTime;
         if (standTimer > standDuration)
         {
             movingRight = !movingRight;
         }
+    }
+
+    private void StartMoving(Directions direction)
+    {
+        enemy.movement.isMoving = true;
+        standTimer = 0;
+        enemy.movement.MoveToDirection(direction);
     }
 }

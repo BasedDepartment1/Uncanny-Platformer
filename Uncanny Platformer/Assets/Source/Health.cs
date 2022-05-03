@@ -18,14 +18,10 @@ public class Health : MonoBehaviour
     internal bool isDead;
     internal bool wasHurt;
 
-    // private Animator animator;
     private SpriteRenderer sprite;
-    // private PlayerMovement controls;
-    
-    void Awake()
+
+    private void Start()
     {
-        Debug.Log(playerLayer.value);
-        Debug.Log(enemyLayer.value);
         CurrentHealth = startingHealth;
         sprite = GetComponent<SpriteRenderer>();
     }
@@ -37,20 +33,15 @@ public class Health : MonoBehaviour
         {
             StartCoroutine(ActivateInvisibility());
             wasHurt = true;
-            // animator.SetTrigger("hurt");
         }
         else
         {
             isDead = true;
-            // animator.SetBool("isDying", true);
-            // animator.SetTrigger("death");
         }
     }
 
-    private void Die()
+    internal void Die()
     {
-        // Debug.Log("zxc");
-        isDead = true;
         gameObject.SetActive(false);
     }
 

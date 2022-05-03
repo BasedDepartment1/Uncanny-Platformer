@@ -1,24 +1,27 @@
+using System;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float damage;
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            other.GetComponent<Health>().ReduceHealthPoints(damage);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.layer == 6)
-        {
-            Physics2D.IgnoreCollision(GetComponent<Collider2D>(),
-                other.collider, true);
-        }
-    }
+    [SerializeField] internal Health health;
+    [SerializeField] internal EnemyPatrol patrolBehaviour;
+    [SerializeField] internal EnemyAnimations animations;
+    [SerializeField] internal EnemyMovement movement;
+    [SerializeField] internal EnemyCollisions collisions;
     
+    internal Rigidbody2D body;
+
+    private void Awake()
+    {
+        body = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        if (health.isDead)
+        {
+            collisions.enabled = false;
+            patrolBehaviour.enabled = false;
+        }
+    }
 }
