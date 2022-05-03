@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -9,7 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField] internal RangedCombat rangedCombat;
     [SerializeField] internal Health health;
     [SerializeField] internal AnimationController animationManager;
-    [SerializeField] private Transform spawnPoint;
+    [SerializeField] [CanBeNull] private Transform spawnPoint;
     [SerializeField] private float deathTime = 1f;
     
 
@@ -23,8 +24,7 @@ public class Player : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         if (health.isDead)
         {
             controls.enabled = false;
+            body.velocity = new Vector2(0f, body.velocity.y);
             Invoke(nameof(Respawn), deathTime);
         }
     }
