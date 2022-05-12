@@ -11,8 +11,8 @@ public class Jumper : MonoBehaviour
             return;
         }
         
-        var body = other.GetComponent<Rigidbody2D>();
-        
-        body.velocity = new Vector2(body.velocity.x, jumpForce);
+        var playerMovement = other.GetComponent<PlayerMovement>();
+        playerMovement.ActivateJump(jumpForce);
+        // body.velocity = new Vector2(body.velocity.x, jumpForce);
     }
 }

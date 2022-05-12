@@ -40,9 +40,8 @@ public class PlayerMovement : MonoBehaviour
         
         if (player.controls.isJumpPressed)
         {
-            isJumping = true;
             player.controls.isJumpPressed = false;
-            Jump();
+            ActivateJump(jumpForce);
         }
     }
 
@@ -67,11 +66,12 @@ public class PlayerMovement : MonoBehaviour
         isOrientationRight = !isOrientationRight;
     }
     
-    private void Jump()
+    internal void ActivateJump(float force)
     {
+        isJumping = true;
         if (jumpCount < maxJumpCount)
         {
-            player.body.velocity = new Vector2(player.body.velocity.x, jumpForce);
+            player.body.velocity = new Vector2(player.body.velocity.x, force);
             jumpCount++;
         }
     }
