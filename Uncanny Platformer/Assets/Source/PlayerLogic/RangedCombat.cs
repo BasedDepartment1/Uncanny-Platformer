@@ -12,7 +12,8 @@ namespace Source.PlayerLogic
         [SerializeField] private Transform firePosition;
         [SerializeField] private GameObject throwingKnife;
         [SerializeField] private AnimationClip throwingAnimation;
-    
+        [SerializeField] private float animationDelay = 0.6f;
+        
         internal bool IsThrowStarted;
     
         private float fireTimer = float.MaxValue;
@@ -25,7 +26,7 @@ namespace Source.PlayerLogic
                 && fireTimer > fireCooldown)
             {
                 IsThrowStarted = true;
-                Invoke(nameof(Fire), throwingAnimation.length * 0.6f);
+                Invoke(nameof(Fire), throwingAnimation.length * animationDelay);
                 fireTimer = 0;
             }
         

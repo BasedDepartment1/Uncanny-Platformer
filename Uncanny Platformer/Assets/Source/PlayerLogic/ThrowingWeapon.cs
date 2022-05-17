@@ -1,3 +1,4 @@
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -13,7 +14,7 @@ namespace Source.PlayerLogic
                 return;
             }
         
-            other.GetComponent<Health>()?.ReduceHealthPoints(knifeDamage);
+            other.GetComponent<IDamageable>()?.Damage(knifeDamage);
             Destroy(gameObject);
         }
     }

@@ -17,7 +17,6 @@ namespace Source.PlayerLogic
     {
         [SerializeField] private Player player;
         [SerializeField] private float rangedAttackDelay = 0.7f;
-        private readonly AnimStates animStates;
 
         private string currentState;
         private bool isThrowing;
@@ -29,8 +28,7 @@ namespace Source.PlayerLogic
         {
             animator = GetComponent<Animator>();
         }
-
-        // Update is called once per frame
+        
         void Update()
         {
             if (player.health.IsDead)
@@ -38,53 +36,61 @@ namespace Source.PlayerLogic
                 ChangeAnimationState(AnimStates.Death);
                 return;
             }
-        
-            if (player.health.WasHurt)
-            {
-                player.health.WasHurt = false;
-                if (!isHurting)
-                {
-                    isHurting = true;
-                    ChangeAnimationState(AnimStates.Hurt);
-                    Invoke(nameof(StopHurting),
-                        animator.GetCurrentAnimatorStateInfo(0).length);
-                }
-                return;
-            }
-        
-        
+            
+            PlayWithoutDisruption(ref player.health.WasHurt, 
+                ref isHurting, 
+                AnimStates.Hurt, 
+                nameof(StopHurting));
+            
             if (!isThrowing && !isHurting && player.IsGrounded())
             {
-                ChangeAnimationState(player.movement.isRunning ? AnimStates.Run : AnimStates.Idle);
+                ChangeAnimationState(player.movement.IsRunning ? AnimStates.Run : AnimStates.Idle);
             }
-        
-            var velocity = player.body.velocity;
-        
-            if (player.movement.isJumping)
+
+            PlayVerticalMovementAnimation(player.Body.velocity);
+
+            PlayWithoutDisruption(ref player.rangedCombat.IsThrowStarted,
+                ref isThrowing,
+                AnimStates.Throw,
+                nameof(EndThrow),
+                rangedAttackDelay);
+        }
+
+        private void PlayWithoutDisruption(
+            ref bool needsStart, 
+            ref bool isPlaying, 
+            string animationName,
+            string stopActionName,
+            float delay = 1f
+            )
+        {
+            if (!needsStart) return;
+            
+            if (!isPlaying)
+            {
+                isPlaying = true;
+                ChangeAnimationState(animationName);
+                Invoke(stopActionName,
+                    animator.GetCurrentAnimatorStateInfo(0).length * delay);
+            }
+            needsStart = false;
+        }
+
+        private void PlayVerticalMovementAnimation(Vector2 velocity)
+        {
+            if (player.jump.IsJumping)
             {
                 if (velocity.y > 0)
                 {
                     ChangeAnimationState(AnimStates.Jump);
                 }
 
-                player.movement.isJumping = false;
+                player.jump.IsJumping = false;
             }
 
             if (!player.IsGrounded() && velocity.y < 0)
             {
                 ChangeAnimationState(AnimStates.Fall);
-            }
-
-            if (player.rangedCombat.IsThrowStarted)
-            {
-                if (!isThrowing)
-                {
-                    isThrowing = true;
-                    ChangeAnimationState(AnimStates.Throw);
-                    Invoke(nameof(EndThrow),
-                        animator.GetCurrentAnimatorStateInfo(0).length * rangedAttackDelay);
-                }
-                player.rangedCombat.IsThrowStarted = false;
             }
         }
 

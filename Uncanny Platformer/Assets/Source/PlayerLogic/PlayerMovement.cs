@@ -9,48 +9,33 @@ namespace Source.PlayerLogic
 
         [Header("Movement characteristics")]
         [SerializeField] private float maxSpeed = 10f;
-        [SerializeField] private float jumpForce = 10f;
-        [SerializeField] private int maxJumpCount = 3;
-
-        internal bool isJumping;
-        internal bool isRunning;
+        
+        internal bool IsRunning;
         private bool isOrientationRight = true;
-        private int jumpCount;
 
         private void FixedUpdate()
         {
             if (player.controls.IsLeftPressed)
             {
-                isRunning = true;
+                IsRunning = true;
                 MoveToDirection(Directions.Left);
             }
             else if (player.controls.IsRightPressed)
             {
-                isRunning = true;
+                IsRunning = true;
                 MoveToDirection(Directions.Right);
             }
             else
             {
-                isRunning = false;
+                IsRunning = false;
                 MoveToDirection(Directions.None);
-            }
-
-            if (player.IsGrounded())
-            {
-                jumpCount = 0;
-            }
-        
-            if (player.controls.IsJumpPressed)
-            {
-                player.controls.IsJumpPressed = false;
-                ActivateJump(jumpForce);
             }
         }
 
         private void MoveToDirection(Directions direction)
         {
-            player.body.velocity = new Vector2((int)direction * maxSpeed, 
-                player.body.velocity.y);
+            player.Body.velocity = new Vector2((int)direction * maxSpeed, 
+                player.Body.velocity.y);
         
             if ((int)direction > 0 && !isOrientationRight
                 || (int)direction < 0 && isOrientationRight)
@@ -66,16 +51,6 @@ namespace Source.PlayerLogic
             scale.x *= -1;
             transform1.localScale = scale;
             isOrientationRight = !isOrientationRight;
-        }
-    
-        internal void ActivateJump(float force)
-        {
-            isJumping = true;
-            if (jumpCount < maxJumpCount)
-            {
-                player.body.velocity = new Vector2(player.body.velocity.x, force);
-                jumpCount++;
-            }
         }
     }
 }

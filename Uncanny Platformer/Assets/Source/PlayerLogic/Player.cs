@@ -4,25 +4,27 @@ using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class Player : MonoBehaviour, IDamageable
+    public class Player : MonoBehaviour, IDamageable, ITossable
     {
         [SerializeField] internal Controls controls;
         [SerializeField] internal PlayerMovement movement;
+        [SerializeField] internal Jump jump;
         [SerializeField] internal RangedCombat rangedCombat;
         [SerializeField] internal Health health;
         [SerializeField] internal AnimationController animationManager;
-        [SerializeField] [CanBeNull] private Transform spawnPoint;
+        
+        [SerializeField] private Transform spawnPoint;
         [SerializeField] private float deathTime = 1f;
     
 
         [SerializeField] private LayerMask groundLayer;
     
-        internal Rigidbody2D body;
+        internal Rigidbody2D Body;
         private BoxCollider2D boxCollider;
     
         void Awake()
         {
-            body = GetComponent<Rigidbody2D>();
+            Body = GetComponent<Rigidbody2D>();
             boxCollider = GetComponent<BoxCollider2D>();
         }
     
@@ -36,7 +38,7 @@ namespace Source.PlayerLogic
             if (health.IsDead)
             {
                 controls.enabled = false;
-                body.velocity = new Vector2(0f, body.velocity.y);
+                Body.velocity = new Vector2(0f, Body.velocity.y);
                 Invoke(nameof(Respawn), deathTime);
             }
         }
@@ -44,7 +46,7 @@ namespace Source.PlayerLogic
         private void Respawn()
         {
             health.Revive();
-            body.position = spawnPoint.position;
+            Body.position = spawnPoint.position;
             controls.enabled = true;
         }
     
@@ -65,6 +67,11 @@ namespace Source.PlayerLogic
         public void Damage(float damage)
         {
             health.ReduceHealthPoints(damage);
+        }
+
+        public void Toss(float force)
+        {
+            jump.ActivateJump(force);
         }
     }
 }
