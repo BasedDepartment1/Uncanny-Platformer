@@ -1,16 +1,19 @@
 
 using UnityEngine;
 
-public class Teleport : MonoBehaviour
+namespace Source
 {
-    [SerializeField] private Transform teleportPosition;
-  
-    private void OnTriggerEnter2D(Collider2D collider)
+    public class Teleport : MonoBehaviour
     {
-        if (collider.gameObject.CompareTag("Player"))
+        [SerializeField] private Transform teleportPosition;
+  
+        private void OnTriggerEnter2D(Collider2D collider)
         {
+            if (!collider.gameObject.CompareTag("Player")) return;
+            
+            var position = teleportPosition.position;
             collider.GetComponent<Rigidbody2D>().position = 
-                (new Vector3(teleportPosition.position.x, teleportPosition.position.y, transform.position.z));
+                (new Vector3(position.x, position.y, transform.position.z));
         }
     }
 }

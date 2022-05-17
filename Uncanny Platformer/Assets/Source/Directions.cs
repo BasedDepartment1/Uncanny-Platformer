@@ -1,6 +1,9 @@
-public enum Directions
+namespace Source
 {
-    Left = -1,
-    None = 0,
-    Right = 1
+    public enum Directions
+    {
+        Left = -1,
+        None = 0,
+        Right = 1
+    }
 }
