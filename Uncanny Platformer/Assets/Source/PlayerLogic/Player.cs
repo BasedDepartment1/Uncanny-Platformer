@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using Source.Interfaces;
 using UnityEngine;
 
@@ -15,7 +14,7 @@ namespace Source.PlayerLogic
         
         [SerializeField] private Transform spawnPoint;
         [SerializeField] private float deathTime = 1f;
-    
+        [SerializeField] private float boxCastLength = 0.1f;
 
         [SerializeField] private LayerMask groundLayer;
     
@@ -52,14 +51,17 @@ namespace Source.PlayerLogic
     
         internal bool IsGrounded()
         {
+            var center = boxCollider.bounds.min;
+            center.x += boxCollider.bounds.extents.x;
+            var size = new Vector2(boxCollider.size.x, 2 * boxCastLength);
+            
             var raycastHit = Physics2D.BoxCast(
-                boxCollider.bounds.center,
-                boxCollider.bounds.size,
+                center,
+                size,
                 0f,
-                Vector2.down,
-                0.1f,
-                groundLayer
-            );
+                Vector2.up,
+                boxCastLength,
+                groundLayer);
 
             return raycastHit.collider != null;
         }
