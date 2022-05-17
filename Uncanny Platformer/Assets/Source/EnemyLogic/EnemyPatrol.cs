@@ -2,24 +2,24 @@ using UnityEngine;
 
 namespace Source.EnemyLogic
 {
+    // TODO refactor this piece of shit code
+    
     public class EnemyPatrol : MonoBehaviour
     {
-        [Header("Patrol Objects")]
+        [Header("Patrol Objects")] 
         [SerializeField] private Transform leftEdge;
         [SerializeField] private Transform rightEdge;
         [SerializeField] private Enemy enemy;
-    
+
         [Header("Patrol Timings")]
         [SerializeField] private float standDuration = 1;
-    
-    
+
         private bool movingRight;
         private float standTimer;
-
-        void FixedUpdate()
+        
+        private void FixedUpdate()
         {
             if (!enabled) return;
-        
             if (movingRight)
             {
                 if (enemy.transform.position.x < rightEdge.position.x)
@@ -28,7 +28,7 @@ namespace Source.EnemyLogic
                 }
                 else
                 {
-                    TurnAround();
+                    StandStill();
                 }
             }
             else
@@ -39,12 +39,12 @@ namespace Source.EnemyLogic
                 }
                 else
                 {
-                    TurnAround();
+                    StandStill();
                 }
             }
         }
 
-        private void TurnAround()
+        private void StandStill()
         {
             enemy.movement.isMoving = false;
             standTimer += Time.deltaTime;

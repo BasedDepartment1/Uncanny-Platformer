@@ -9,12 +9,17 @@ namespace Source.EnemyLogic
 
         internal bool isMoving;
     
-        internal void MoveToDirection(Directions direction)
+        internal void MoveToDirection(int direction)
         {
             var initialScale = enemy.transform.localScale;
-            enemy.transform.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
+            enemy.transform.localScale = new Vector3(-Mathf.Abs(initialScale.x) * direction, 
                 initialScale.y, initialScale.z);
-            enemy.body.velocity = new Vector2((int)direction * speed, enemy.body.velocity.y);
+            enemy.Body.velocity = new Vector2(direction * speed, enemy.Body.velocity.y);
+        }
+
+        internal void MoveToDirection(Directions direction)
+        {
+            MoveToDirection((int)direction);
         }
     }
 }

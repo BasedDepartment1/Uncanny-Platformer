@@ -11,11 +11,11 @@ namespace Source.EnemyLogic
         [SerializeField] internal EnemyMovement movement;
         [SerializeField] internal EnemyCollisions collisions;
     
-        internal Rigidbody2D body;
+        internal Rigidbody2D Body;
 
         private void Awake()
         {
-            body = GetComponent<Rigidbody2D>();
+            Body = GetComponent<Rigidbody2D>();
         }
 
         private void Update()

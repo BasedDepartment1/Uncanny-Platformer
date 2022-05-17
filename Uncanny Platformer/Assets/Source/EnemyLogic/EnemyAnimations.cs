@@ -4,10 +4,10 @@ namespace Source.EnemyLogic
 {
     internal struct EnemyAnimationStates
     {
-        public static readonly string Idle = "Idle";
-        public static readonly string Move = "Move";
-        public static readonly string Hurt = "Hurt";
-        public static readonly string Die = "Die";
+        public const string Idle = "Idle";
+        public const string Move = "Move";
+        public const string Hurt = "Hurt";
+        public const string Die = "Die";
     }
 
     public class EnemyAnimations : MonoBehaviour
@@ -31,18 +31,7 @@ namespace Source.EnemyLogic
                 return;
             }
         
-            if (enemy.health.WasHurt)
-            {
-                enemy.health.WasHurt = false;
-                if (!isHurting)
-                {
-                    isHurting = true;
-                    ChangeAnimationState(EnemyAnimationStates.Hurt);
-                    Invoke(nameof(StopHurting),
-                        animator.GetCurrentAnimatorStateInfo(0).length);
-                }
-                return;
-            }
+            TryPlayHurtAnimation();
 
             if (!isHurting)
             {
@@ -50,6 +39,21 @@ namespace Source.EnemyLogic
                     ? EnemyAnimationStates.Move 
                     : EnemyAnimationStates.Idle);
             }
+        }
+
+        private void TryPlayHurtAnimation()
+        {
+            if (!enemy.health.WasHurt) return;
+            
+            enemy.health.WasHurt = false;
+            if (!isHurting)
+            {
+                isHurting = true;
+                ChangeAnimationState(EnemyAnimationStates.Hurt);
+                Invoke(nameof(StopHurting),
+                    animator.GetCurrentAnimatorStateInfo(0).length);
+            }
+            return;
         }
 
         private void ChangeAnimationState(string newState)

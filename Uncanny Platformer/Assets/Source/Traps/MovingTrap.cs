@@ -11,7 +11,7 @@ namespace Source.Traps
 
         private Transform CurrentTarget => waypoints[currentTargetIndex];
     
-        void Update()
+        private void Update()
         {
             if (Vector2.Distance(transform.position,
                 CurrentTarget.position) < 0.1f)

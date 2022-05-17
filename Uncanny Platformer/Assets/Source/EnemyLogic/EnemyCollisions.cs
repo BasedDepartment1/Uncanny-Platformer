@@ -1,3 +1,4 @@
+using Source.Interfaces;
 using Source.PlayerLogic;
 using UnityEngine;
 
@@ -17,10 +18,9 @@ namespace Source.EnemyLogic
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Player") && enabled)
-            {
-                other.GetComponent<Health>().ReduceHealthPoints(damage);
-            }
+            if (!enabled) return;
+            
+            other.GetComponent<IDamageable>()?.Damage(damage);
         }
     }
 }
