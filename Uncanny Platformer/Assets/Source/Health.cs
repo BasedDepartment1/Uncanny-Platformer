@@ -55,9 +55,9 @@ public class Health : MonoBehaviour
     {
         Physics2D.IgnoreLayerCollision(MaskToLayer(playerLayer),
             MaskToLayer(enemyLayer), true);
+        var blinkTime = invisibilityDuration / (blinkCount * 2);
         for (var i = 0; i < blinkCount; i++)
         {
-            var blinkTime = invisibilityDuration / (blinkCount * 2);
             sprite.color = new Color(1, 0, 0, 0.5f);
             yield return new WaitForSeconds(blinkTime);
             sprite.color = Color.white;

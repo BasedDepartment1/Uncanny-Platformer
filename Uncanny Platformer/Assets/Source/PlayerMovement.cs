@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
         {
             player.controls.isJumpPressed = false;
             ActivateJump(jumpForce);
+            FindObjectOfType<AudioManager>().Play("PlayerJump");
         }
     }
 

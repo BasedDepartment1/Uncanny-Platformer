@@ -11,6 +11,7 @@ public class EnemyMovement : MonoBehaviour
     
     internal void MoveToDirection(Directions direction)
     {
+        FindObjectOfType<AudioManager>().Play("SlimeMove");
         var initialScale = enemy.transform.localScale;
         enemy.transform.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
             initialScale.y, initialScale.z);

@@ -1,5 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
+using System.Threading;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -11,13 +12,14 @@ public class Player : MonoBehaviour
     [SerializeField] internal Health health;
     [SerializeField] internal AnimationController animationManager;
     [SerializeField] [CanBeNull] private Transform spawnPoint;
-    [SerializeField] private float deathTime = 1f;
+    [SerializeField] private float deathTime = 10f;
     
 
     [SerializeField] private LayerMask groundLayer;
     
     internal Rigidbody2D body;
     private BoxCollider2D boxCollider;
+    private bool isDeadSoundNeed = true;
     
     void Awake()
     {
@@ -34,6 +36,8 @@ public class Player : MonoBehaviour
         
         if (health.isDead)
         {
+            //StartCoroutine(MakeDeathSound());        rewrite MakeDeathSound with Coroutine
+            MakeDeathSound();
             controls.enabled = false;
             body.velocity = new Vector2(0f, body.velocity.y);
             Invoke(nameof(Respawn), deathTime);
@@ -43,6 +47,7 @@ public class Player : MonoBehaviour
     private void Respawn()
     {
         health.Revive();
+        isDeadSoundNeed = true;
         body.position = spawnPoint.position;
         controls.enabled = true;
     }
@@ -59,5 +64,12 @@ public class Player : MonoBehaviour
         );
 
         return raycastHit.collider != null;
+    }
+
+    private void MakeDeathSound()
+    {
+        if (isDeadSoundNeed)
+            FindObjectOfType<AudioManager>().Play("PlayerDeath");
+        isDeadSoundNeed = false;
     }
 }

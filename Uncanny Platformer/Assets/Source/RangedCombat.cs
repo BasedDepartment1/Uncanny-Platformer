@@ -36,6 +36,7 @@ public class RangedCombat : MonoBehaviour
         knife.transform.position = firePosition.position;
         knife.GetComponent<Rigidbody2D>().velocity = new Vector2(
             Mathf.Sign(transform.localScale.x) * knifeSpeed, 0f);
+        FindObjectOfType<AudioManager>().Play("ThrowSword");
         Destroy(knife, lifeTime);
     }
 }
