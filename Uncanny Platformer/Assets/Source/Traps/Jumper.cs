@@ -1,5 +1,4 @@
 using Source.Interfaces;
-using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source.Traps
@@ -10,9 +9,7 @@ namespace Source.Traps
     
         private void OnTriggerEnter2D(Collider2D other)
         {
-            var entity = other.GetComponent<ITossable>();
-
-            entity?.Toss(jumpForce);
+            other.GetComponent<ITossable>()?.Toss(jumpForce);
         }
     }
 }

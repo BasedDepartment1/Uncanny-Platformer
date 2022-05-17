@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 742535158938988776}
   - component: {fileID: 742535158938988779}
   - component: {fileID: 742535158938988782}
+  - component: {fileID: 4225068808110464811}
   m_Layer: 6
   m_Name: Player 1 1
   m_TagString: Player
@@ -184,6 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controls: {fileID: 742535158938988782}
   movement: {fileID: 742535158938988779}
+  jump: {fileID: 4225068808110464811}
   rangedCombat: {fileID: 742535158938988776}
   health: {fileID: 742535158938988777}
   animationManager: {fileID: 742535158938988775}
@@ -265,6 +267,7 @@ MonoBehaviour:
   firePosition: {fileID: 4241515678617687457}
   throwingKnife: {fileID: 4241515680333577172}
   throwingAnimation: {fileID: 7400000, guid: c221b8ef150034f54a139456fe21e3a1, type: 2}
+  animationDelay: 0.6
 --- !u!114 &742535158938988779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -279,8 +282,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 4241515679893887403}
   maxSpeed: 10
-  jumpForce: 10
-  maxJumpCount: 3
 --- !u!114 &742535158938988782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,6 +299,21 @@ MonoBehaviour:
   moveRightKey: 100
   jumpKey: 119
   throwKey: 114
+--- !u!114 &4225068808110464811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4241515679893887382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ed745044ded446aa6ccc3362ab787b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4241515679893887403}
+  jumpForce: 10
+  maxJumpCount: 3
 --- !u!1 &4241515680333577172
 GameObject:
   m_ObjectHideFlags: 0

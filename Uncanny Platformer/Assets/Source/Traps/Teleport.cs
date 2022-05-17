@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace Source
+namespace Source.Traps
 {
     public class Teleport : MonoBehaviour
     {

@@ -6,16 +6,18 @@ namespace Source.Traps
     {
         private PlatformEffector2D effector;
         private float waitTime;
-        void Start()
+        private void Start()
         {
             effector = GetComponent<PlatformEffector2D>();
         }
 
-        // Update is called once per frame
-        void Update()
+        private void Update()
         {
             if (Input.GetKey(KeyCode.S))
+            {
                 waitTime = .5f;
+            }
+                
             if (Input.GetKey(KeyCode.S))
             {
                 if (waitTime <= 0)

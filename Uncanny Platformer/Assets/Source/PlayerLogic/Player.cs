@@ -69,6 +69,11 @@ namespace Source.PlayerLogic
             health.ReduceHealthPoints(damage);
         }
 
+        public void Kill()
+        {
+            health.ReduceHealthPoints(health.CurrentHealth * 10);
+        }
+
         public void Toss(float force)
         {
             jump.ActivateJump(force);

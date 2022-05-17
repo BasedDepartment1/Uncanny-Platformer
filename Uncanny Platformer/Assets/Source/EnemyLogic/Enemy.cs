@@ -31,5 +31,10 @@ namespace Source.EnemyLogic
         {
             health.ReduceHealthPoints(damage);
         }
+
+        public void Kill()
+        {
+            health.ReduceHealthPoints(health.CurrentHealth + 10);
+        }
     }
 }
