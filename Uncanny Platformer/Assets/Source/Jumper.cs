@@ -13,6 +13,7 @@ public class Jumper : MonoBehaviour
         
         var playerMovement = other.GetComponent<PlayerMovement>();
         playerMovement.ActivateJump(jumpForce);
+        FindObjectOfType<AudioManager>().Play("JumperSound");
         // body.velocity = new Vector2(body.velocity.x, jumpForce);
     }
 }
