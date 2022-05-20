@@ -186,9 +186,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.3125, z: 0.3125, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.4375, y: 3.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -329,9 +329,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0031865835, y: -0.0037611574}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.3125, z: 0.3125, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.4375, y: 3.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -763,9 +763,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.0031865835, y: -0.0037611574}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.3125, z: 0.3125, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.4375, y: 3.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -953,9 +953,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
+    border: {x: 0, y: 0.3125, z: 0.3125, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.4375, y: 3.4375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1211,11 +1211,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.64
+      value: 4.99
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: 12.49
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.z
