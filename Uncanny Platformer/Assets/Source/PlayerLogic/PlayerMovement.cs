@@ -1,34 +1,45 @@
+using System;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class PlayerMovement : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour, IMovement
     {
         [Header("PlayerScript")] [SerializeField]
         private Player player;
 
         [Header("Movement characteristics")]
         [SerializeField] private float maxSpeed = 10f;
-        
-        internal bool IsRunning;
+
         private bool isOrientationRight = true;
+        
+        public event Action<Directions> Move;
+
+        public event Action Idle;
+
+        private void Start()
+        {
+            Move += MoveToDirection;
+            Idle += () => MoveToDirection(Directions.None);
+        }
 
         private void FixedUpdate()
         {
+            if (!enabled)
+            {
+                player.Body.velocity = new Vector2(0f, player.Body.velocity.y);
+            }
             if (player.controls.IsLeftPressed)
             {
-                IsRunning = true;
-                MoveToDirection(Directions.Left);
+                Move(Directions.Left);
             }
             else if (player.controls.IsRightPressed)
             {
-                IsRunning = true;
-                MoveToDirection(Directions.Right);
+                Move(Directions.Right);
             }
             else
             {
-                IsRunning = false;
-                MoveToDirection(Directions.None);
+                Idle();
             }
         }
 

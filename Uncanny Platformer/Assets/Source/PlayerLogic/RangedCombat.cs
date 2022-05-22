@@ -1,8 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class RangedCombat : MonoBehaviour
+    public class RangedCombat : MonoBehaviour, IRangedCombat
     {
         [SerializeField] private Player player;
     
@@ -13,24 +14,32 @@ namespace Source.PlayerLogic
         [SerializeField] private GameObject throwingKnife;
         [SerializeField] private AnimationClip throwingAnimation;
         [SerializeField] private float animationDelay = 0.6f;
-        
-        internal bool IsThrowStarted;
-    
+
         private float fireTimer = float.MaxValue;
+
+        public event Action Throw;
+
+        private void Start()
+        {
+            Throw += ThrowWeapon;
+        }
 
         private void Update()
         {
             fireTimer += Time.deltaTime;
-            if (player.IsGrounded()
-                && player.controls.IsRangedAttackPressed 
-                && fireTimer > fireCooldown)
-            {
-                IsThrowStarted = true;
-                Invoke(nameof(Fire), throwingAnimation.length * animationDelay);
-                fireTimer = 0;
-            }
-        
+            if (!player.controls.IsRangedAttackPressed) return;
             player.controls.IsRangedAttackPressed = false;
+            
+            Throw();
+        }
+
+        private void ThrowWeapon()
+        {
+            if (!player.IsGrounded()
+                || fireTimer <= fireCooldown) return;
+            
+            Invoke(nameof(Fire), throwingAnimation.length * animationDelay);
+            fireTimer = 0;
         }
 
         private void Fire()

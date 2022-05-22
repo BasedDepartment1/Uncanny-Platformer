@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class Player : MonoBehaviour, IDamageable, ITossable
+    public class Player : MonoBehaviour, IDamageable
     {
         [SerializeField] internal Controls controls;
         [SerializeField] internal PlayerMovement movement;
@@ -25,30 +25,9 @@ namespace Source.PlayerLogic
         {
             Body = GetComponent<Rigidbody2D>();
             boxCollider = GetComponent<BoxCollider2D>();
-        }
-    
-        void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                health.ReduceHealthPoints(50);
-            }
-        
-            if (health.IsDead)
-            {
-                controls.enabled = false;
-                Body.velocity = new Vector2(0f, Body.velocity.y);
-                Invoke(nameof(Respawn), deathTime);
-            }
+            health.Death += Deactivate;
         }
 
-        private void Respawn()
-        {
-            health.Revive();
-            Body.position = spawnPoint.position;
-            controls.enabled = true;
-        }
-    
         internal bool IsGrounded()
         {
             var center = boxCollider.bounds.min;
@@ -66,6 +45,12 @@ namespace Source.PlayerLogic
             return raycastHit.collider != null;
         }
 
+        private void Deactivate()
+        {
+            controls.enabled = false;
+            movement.enabled = false;
+        }
+
         public void Damage(float damage)
         {
             health.ReduceHealthPoints(damage);
@@ -74,11 +59,6 @@ namespace Source.PlayerLogic
         public void Kill()
         {
             health.ReduceHealthPoints(health.CurrentHealth * 10);
-        }
-
-        public void Toss(float force)
-        {
-            jump.ActivateJump(force);
         }
     }
 }

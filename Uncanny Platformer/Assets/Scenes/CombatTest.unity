@@ -502,6 +502,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &917170909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 917170910}
+  m_Layer: 0
+  m_Name: spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &917170910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917170909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.6063337, y: 3.493331, z: -17.156763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044750799
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,14 +878,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 742535158938988777, guid: c575e51367946064a84ae1514905e074, type: 3}
+      propertyPath: entityLayerIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 742535158938988777, guid: c575e51367946064a84ae1514905e074, type: 3}
+      propertyPath: damagingLayerIndices.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 742535158938988777, guid: c575e51367946064a84ae1514905e074, type: 3}
+      propertyPath: damagingLayerIndices.Array.data[0]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 742535158938988777, guid: c575e51367946064a84ae1514905e074, type: 3}
+      propertyPath: damagingLayerIndices.Array.data[1]
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4241515679893887382, guid: c575e51367946064a84ae1514905e074, type: 3}
       propertyPath: m_Name
       value: Player 1 1
       objectReference: {fileID: 0}
     - target: {fileID: 4241515679893887403, guid: c575e51367946064a84ae1514905e074, type: 3}
+      propertyPath: deathTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241515679893887403, guid: c575e51367946064a84ae1514905e074, type: 3}
       propertyPath: spawnPoint
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 917170910}
     - target: {fileID: 4241515679893887407, guid: c575e51367946064a84ae1514905e074, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -1197,6 +1247,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 282328845627039012, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
+      propertyPath: trapDamage
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1211,11 +1265,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.64
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: -2.2
       objectReference: {fileID: 0}
     - target: {fileID: 712098935525757248, guid: 90bbb97c4d56e5848896ec0c6c4ab4ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1421,6 +1475,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5420253798354602865, guid: 7ff45a3097e1ae64cba6ddb24fe17b8a, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5420253798354602874, guid: 7ff45a3097e1ae64cba6ddb24fe17b8a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.23

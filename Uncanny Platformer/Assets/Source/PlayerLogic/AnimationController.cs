@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -23,74 +24,102 @@ namespace Source.PlayerLogic
         private bool isHurting;
     
         private Animator animator;
-    
-        void Start()
+
+        private Action<float> onJump;
+        private Action onThrow;
+        private Action onHpChanged;
+        private Action<Directions> onMove;
+
+        private void Start()
         {
             animator = GetComponent<Animator>();
+            SetUpEvents();
+            player.movement.Move += onMove;
+            player.movement.Idle += OnIdle;
+            player.jump.PerformJump += onJump;
+            player.rangedCombat.Throw += onThrow;
+            player.health.HpChanged += onHpChanged;
+            player.health.Death += OnDeath;
         }
         
-        void Update()
+        private void Update()
         {
-            if (player.health.IsDead)
-            {
-                ChangeAnimationState(AnimStates.Death);
-                return;
-            }
+            if (!enabled) return;
             
-            PlayWithoutDisruption(ref player.health.WasHurt, 
-                ref isHurting, 
-                AnimStates.Hurt, 
-                nameof(StopHurting));
+            PlayFall(player.Body.velocity);
+        }
+
+        private void OnIdle()
+        {
+            if (isThrowing || isHurting || !player.IsGrounded()) return;
             
-            if (!isThrowing && !isHurting && player.IsGrounded())
-            {
-                ChangeAnimationState(player.movement.IsRunning ? AnimStates.Run : AnimStates.Idle);
-            }
+            ChangeAnimationState(AnimStates.Idle);
+        }
 
-            PlayVerticalMovementAnimation(player.Body.velocity);
+        private void PlayMove()
+        {
+            if (isThrowing || isHurting || !player.IsGrounded()) return;
+            
+            ChangeAnimationState(AnimStates.Run);
+        }
 
-            PlayWithoutDisruption(ref player.rangedCombat.IsThrowStarted,
+        private void OnDeath()
+        {
+            ChangeAnimationState(AnimStates.Death);
+            enabled = false;
+            player.movement.Move -= onMove;
+            player.movement.Idle -= OnIdle;
+            player.jump.PerformJump -= onJump;
+            player.rangedCombat.Throw -= onThrow;
+            player.health.HpChanged -= onHpChanged;
+        }
+
+        private void SetUpEvents()
+        {
+            onMove = directions => PlayMove();
+            
+            onJump = (float _) => PlayJump();
+            
+            onThrow = () => PlayWithoutDisruption(
                 ref isThrowing,
                 AnimStates.Throw,
                 nameof(EndThrow),
                 rangedAttackDelay);
+            
+            onHpChanged = () => PlayWithoutDisruption(
+                ref isHurting, 
+                AnimStates.Hurt, 
+                nameof(StopHurting));
         }
 
         private void PlayWithoutDisruption(
-            ref bool needsStart, 
             ref bool isPlaying, 
             string animationName,
             string stopActionName,
             float delay = 1f
-            )
+        )
         {
-            if (!needsStart) return;
+            if (isPlaying) return;
             
-            if (!isPlaying)
-            {
-                isPlaying = true;
-                ChangeAnimationState(animationName);
-                Invoke(stopActionName,
-                    animator.GetCurrentAnimatorStateInfo(0).length * delay);
-            }
-            needsStart = false;
+            isPlaying = true;
+            ChangeAnimationState(animationName);
+            Invoke(stopActionName,
+                animator.GetCurrentAnimatorStateInfo(0).length * delay);
         }
 
-        private void PlayVerticalMovementAnimation(Vector2 velocity)
+        private void PlayFall(Vector2 velocity)
         {
-            if (player.jump.IsJumping)
-            {
-                if (velocity.y > 0)
-                {
-                    ChangeAnimationState(AnimStates.Jump);
-                }
-
-                player.jump.IsJumping = false;
-            }
-
             if (!player.IsGrounded() && velocity.y < 0)
             {
                 ChangeAnimationState(AnimStates.Fall);
+            }
+        }
+
+        private void PlayJump()
+        {
+            if (player.Body.velocity.y > 0)
+            {
+                ChangeAnimationState(AnimStates.Jump);
             }
         }
 

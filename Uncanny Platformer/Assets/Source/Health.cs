@@ -1,9 +1,10 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 namespace Source
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, IHealth
     {
         public float CurrentHealth { get; private set; }
     
@@ -14,44 +15,53 @@ namespace Source
         [SerializeField] private float invisibilityDuration;
         [SerializeField] private int blinkCount;
 
-        [SerializeField] private LayerMask playerLayer;
-        [SerializeField] private LayerMask enemyLayer;
+        [SerializeField] private int entityLayerIndex;
+        [SerializeField] private int[] damagingLayerIndices;
 
-        internal bool IsDead;
+        public bool IsDead { get; set; }
         internal bool WasHurt;
 
         private SpriteRenderer sprite;
+
+        public event Action HpChanged;
+
+        public event Action Death;
 
         private void Start()
         {
             CurrentHealth = startingHealth;
             sprite = GetComponent<SpriteRenderer>();
+            HpChanged += CheckHp;
         }
 
         public void ReduceHealthPoints(float damage)
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, startingHealth);
+            HpChanged();
+        }
+
+        private void CheckHp()
+        {
             if (CurrentHealth > 0)
             {
                 StartCoroutine(ActivateInvisibility());
-                WasHurt = true;
             }
             else
             {
-                IsDead = true;
+                Death();
             }
         }
 
-        internal void Revive()
-        {
-            CurrentHealth = startingHealth;
-            IsDead = false;
-        }
+        // public void Revive()
+        // {
+        //     CurrentHealth = startingHealth;
+        //     IsDead = false;
+        // }
+        
 
         private IEnumerator ActivateInvisibility()
         {
-            Physics2D.IgnoreLayerCollision(MaskToLayer(playerLayer),
-                MaskToLayer(enemyLayer), true);
+            SetIgnoreCollisions(true);
             for (var i = 0; i < blinkCount; i++)
             {
                 var blinkTime = invisibilityDuration / (blinkCount * 2);
@@ -60,20 +70,15 @@ namespace Source
                 sprite.color = Color.white;
                 yield return new WaitForSeconds(blinkTime);
             }
-            Physics2D.IgnoreLayerCollision(MaskToLayer(playerLayer), 
-                MaskToLayer(enemyLayer), false);
+            SetIgnoreCollisions(false);
         }
 
-        private int MaskToLayer(LayerMask mask)
+        private void SetIgnoreCollisions(bool mode)
         {
-            var layerNumber = 0;
-            while (mask.value > 1)
+            foreach (var layerIndex in damagingLayerIndices)
             {
-                mask.value >>= 1;
-                layerNumber++;
+                Physics2D.IgnoreLayerCollision(entityLayerIndex, layerIndex, mode);
             }
-
-            return layerNumber;
         }
     }
 }

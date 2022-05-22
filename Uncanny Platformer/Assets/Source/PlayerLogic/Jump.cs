@@ -1,8 +1,10 @@
+using System;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class Jump : MonoBehaviour
+    public class Jump : MonoBehaviour, IJump, ITossable
     {
         [Header("PlayerScript")] [SerializeField]
         private Player player;
@@ -11,7 +13,13 @@ namespace Source.PlayerLogic
         [SerializeField] private int maxJumpCount = 3;
         
         private int jumpCount;
-        internal bool IsJumping;
+
+        public event Action<float> PerformJump;
+
+        private void Start()
+        {
+            PerformJump += ActivateJump;
+        }
 
         private void FixedUpdate()
         {
@@ -19,21 +27,28 @@ namespace Source.PlayerLogic
             {
                 jumpCount = 0;
             }
-        
-            if (player.controls.IsJumpPressed)
-            {
-                player.controls.IsJumpPressed = false;
-                ActivateJump(jumpForce);
-            }
+
+            if (!player.controls.IsJumpPressed) return;
+            player.controls.IsJumpPressed = false;
+            
+            PerformJump(jumpForce);
+            
         }
         
-        internal void ActivateJump(float force)
+        public void ActivateJump(float force)
         {
-            IsJumping = true;
             if (jumpCount < maxJumpCount)
             {
                 player.Body.velocity = new Vector2(player.Body.velocity.x, force);
                 jumpCount++;
+            }
+        }
+        
+        public void Toss(float force)
+        {
+            if (PerformJump != null)
+            {
+                PerformJump(force);
             }
         }
     }
