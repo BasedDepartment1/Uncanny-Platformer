@@ -1,21 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelLoader : MonoBehaviour
+namespace Source
 {
-    public string LevelToLoad;
-
-    // Start is called before the first frame update
-    public void OnTriggerEnter2D(Collider2D collider2D)
+    public class LevelLoader : MonoBehaviour
     {
-        var colliderGameObject = collider2D.gameObject;
-
-        if (colliderGameObject.CompareTag("Player"))
+        public string levelToLoad;
+        
+        public void OnTriggerEnter2D(Collider2D collider2D)
         {
-            LoadScene();
-        }
-    }
+            var colliderGameObject = collider2D.gameObject;
 
-    void LoadScene() => SceneManager.LoadScene(LevelToLoad);
+            if (colliderGameObject.CompareTag("Player"))
+            {
+                LoadScene();
+            }
+        }
+
+        void LoadScene() => SceneManager.LoadScene(levelToLoad);
+    }
 } 
     

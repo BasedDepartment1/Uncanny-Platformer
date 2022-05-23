@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 712098935525757251}
   - component: {fileID: 712098935525757250}
   - component: {fileID: 712098935525757249}
+  - component: {fileID: 282328845627039012}
   m_Layer: 0
   m_Name: Saw
   m_TagString: Untagged
@@ -112,5 +113,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c29912a9851f094fa1f6099986854f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
   rotationSpeed: 3
+--- !u!114 &282328845627039012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712098935525757261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961c399250e8dda4ba68b2b7ca2011c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapDamage: 50
