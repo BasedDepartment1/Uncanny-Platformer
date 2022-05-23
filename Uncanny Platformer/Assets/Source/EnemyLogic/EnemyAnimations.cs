@@ -12,48 +12,73 @@ namespace Source.EnemyLogic
 
     public class EnemyAnimations : MonoBehaviour
     {
-        [SerializeField] private Enemy enemy;
-
+        // [SerializeField] private Enemy enemy;
+        
         private bool isHurting;
         private string currentState;
         private Animator animator;
+        
+        private IEnemy Enemy { get; set; }
 
         private void Start()
         {
+            Enemy = GetComponent<IEnemy>();
             animator = GetComponent<Animator>();
+            Enemy.PatrolBehaviour.Move += OnMove;
+            Enemy.PatrolBehaviour.Idle += OnIdle;
+            Enemy.Health.HpChanged += OnHurt;
+            Enemy.Health.Death += OnDeath;
         }
 
-        void Update()
-        {
-            if (enemy.health.IsDead)
-            {
-                ChangeAnimationState(EnemyAnimationStates.Die);
-                return;
-            }
-        
-            TryPlayHurtAnimation();
+        // void Update()
+        // {
+        //     // if (enemy.health.IsDead)
+        //     // {
+        //     //     ChangeAnimationState(EnemyAnimationStates.Die);
+        //     //     return;
+        //     // }
+        //     //
+        //     // TryPlayHurtAnimation();
+        //     //
+        //     // if (!isHurting)
+        //     // {
+        //     //     ChangeAnimationState(enemy.movement.isMoving 
+        //     //         ? EnemyAnimationStates.Move 
+        //     //         : EnemyAnimationStates.Idle);
+        //     // }
+        // }
 
-            if (!isHurting)
-            {
-                ChangeAnimationState(enemy.movement.isMoving 
-                    ? EnemyAnimationStates.Move 
-                    : EnemyAnimationStates.Idle);
-            }
+        private void OnDeath()
+        {
+            ChangeAnimationState(EnemyAnimationStates.Die);
+            enabled = false;
+            Enemy.PatrolBehaviour.Move -= OnMove;
+            Enemy.PatrolBehaviour.Idle -= OnIdle;
+            Enemy.Health.HpChanged -= OnHurt;
+            Enemy.Health.Death -= OnDeath;
         }
 
-        private void TryPlayHurtAnimation()
+        private void OnMove(Directions _)
         {
-            if (!enemy.health.WasHurt) return;
+            if (isHurting) return;
             
-            enemy.health.WasHurt = false;
-            if (!isHurting)
-            {
-                isHurting = true;
-                ChangeAnimationState(EnemyAnimationStates.Hurt);
-                Invoke(nameof(StopHurting),
-                    animator.GetCurrentAnimatorStateInfo(0).length);
-            }
-            return;
+            ChangeAnimationState(EnemyAnimationStates.Move);
+        }
+
+        private void OnIdle()
+        {
+            if (isHurting) return;
+            
+            ChangeAnimationState(EnemyAnimationStates.Idle);
+        }
+
+        private void OnHurt()
+        {
+            if (isHurting) return;
+            isHurting = true;
+            ChangeAnimationState(EnemyAnimationStates.Hurt);
+            Invoke(nameof(StopHurting),
+                animator.GetCurrentAnimatorStateInfo(0).length);
         }
 
         private void ChangeAnimationState(string newState)

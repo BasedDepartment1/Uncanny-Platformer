@@ -1,10 +1,7 @@
-using UnityEngine;
-
 namespace Source.PlayerLogic
 {
-    public interface IPlayer
+    public interface IPlayer : IMainComponent
     {
-        Rigidbody2D Body { get; }
         IControls Controls { get; }
         IMovement Movement { get; }
         IJump Jump { get; }

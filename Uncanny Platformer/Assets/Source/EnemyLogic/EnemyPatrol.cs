@@ -1,10 +1,12 @@
+using System;
+using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source.EnemyLogic
 {
     // TODO refactor this piece of shit code
     
-    public class EnemyPatrol : MonoBehaviour
+    public class EnemyPatrol : MonoBehaviour, IMovement
     {
         [Header("Patrol Objects")] 
         [SerializeField] private Transform leftEdge;
@@ -14,9 +16,20 @@ namespace Source.EnemyLogic
         [Header("Patrol Timings")]
         [SerializeField] private float standDuration = 1;
 
+        [SerializeField] private float speed = 5f;
+
         private bool movingRight;
         private float standTimer;
-        
+
+        public event Action<Directions> Move;
+        public event Action Idle;
+
+        private void Start()
+        {
+            Move += StartMoving;
+            Idle += StandStill;
+        }
+
         private void FixedUpdate()
         {
             if (!enabled) return;
@@ -24,29 +37,28 @@ namespace Source.EnemyLogic
             {
                 if (enemy.transform.position.x < rightEdge.position.x)
                 {
-                    StartMoving(Directions.Right);
+                    Move(Directions.Right);
                 }
                 else
                 {
-                    StandStill();
+                    Idle();
                 }
             }
             else
             {
                 if (enemy.transform.position.x >= leftEdge.position.x)
                 {
-                    StartMoving(Directions.Left);
+                    Move(Directions.Left);
                 }
                 else
                 {
-                    StandStill();
+                    Idle();
                 }
             }
         }
 
         private void StandStill()
         {
-            enemy.movement.isMoving = false;
             standTimer += Time.deltaTime;
             if (standTimer > standDuration)
             {
@@ -56,9 +68,21 @@ namespace Source.EnemyLogic
 
         private void StartMoving(Directions direction)
         {
-            enemy.movement.isMoving = true;
             standTimer = 0;
-            enemy.movement.MoveToDirection(direction);
+            MoveToDirection(direction);
+        }
+
+        private void MoveToDirection(Directions direction)
+        {
+            var initialScale = enemy.transform.localScale;
+            enemy.transform.localScale = new Vector3(-Mathf.Abs(initialScale.x) * (int)direction, 
+                initialScale.y, initialScale.z);
+            enemy.Body.velocity = new Vector2((int)direction * speed, enemy.Body.velocity.y);
+        }
+
+        public void Switch(bool mode)
+        {
+            enabled = mode;
         }
     }
 }

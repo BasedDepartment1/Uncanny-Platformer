@@ -1,39 +1,28 @@
+using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source.EnemyLogic
 {
-    public class Enemy : MonoBehaviour, IDamageable
+    public class Enemy : MonoBehaviour, IEnemy
     {
-        [SerializeField] internal Health health;
-        [SerializeField] internal EnemyPatrol patrolBehaviour;
-        [SerializeField] internal EnemyAnimations animations;
-        [SerializeField] internal EnemyMovement movement;
-        [SerializeField] internal EnemyCollisions collisions;
-    
-        internal Rigidbody2D Body;
+        [SerializeField] private EnemyCollisions collisions;
+        
+        public IHealth Health { get; private set; }
+        public IMovement PatrolBehaviour { get; private set; }
+        public Rigidbody2D Body { get; private set; }
 
         private void Awake()
         {
             Body = GetComponent<Rigidbody2D>();
+            Health = GetComponent<IHealth>();
+            PatrolBehaviour = GetComponent<IMovement>();
+            Health.Death += Deactivate;
         }
 
-        private void Update()
+        private void Deactivate()
         {
-            if (health.IsDead)
-            {
-                collisions.enabled = false;
-                patrolBehaviour.enabled = false;
-            }
-        }
-
-        public void Damage(float damage)
-        {
-            health.ReduceHealthPoints(damage);
-        }
-
-        public void Kill()
-        {
-            health.ReduceHealthPoints(health.CurrentHealth + 10);
+            collisions.enabled = false;
+            PatrolBehaviour.Switch(false);
         }
     }
 }
