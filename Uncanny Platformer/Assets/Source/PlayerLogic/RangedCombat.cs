@@ -30,7 +30,10 @@ namespace Source.PlayerLogic
         private void Update()
         {
             fireTimer += Time.deltaTime;
-            if (!Player.Controls.IsRangedAttackPressed) return;
+            if (!Player.Controls.IsRangedAttackPressed 
+                || !Player.IsGrounded()
+                || fireTimer <= fireCooldown) return;
+            
             Player.Controls.IsRangedAttackPressed = false;
             
             Throw();
@@ -38,9 +41,6 @@ namespace Source.PlayerLogic
 
         private void ThrowWeapon()
         {
-            if (!Player.IsGrounded()
-                || fireTimer <= fireCooldown) return;
-            
             Invoke(nameof(Fire), throwingAnimation.length * animationDelay);
             fireTimer = 0;
         }
