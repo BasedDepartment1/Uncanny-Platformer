@@ -5,20 +5,23 @@ namespace Source.PlayerLogic
 {
     public class PlayerMovement : MonoBehaviour, IMovement
     {
-        [Header("PlayerScript")] [SerializeField]
-        private Player player;
+        // [Header("PlayerScript")] [SerializeField]
+        // private Player player;
 
         [Header("Movement characteristics")]
         [SerializeField] private float maxSpeed = 10f;
 
         private bool isOrientationRight = true;
         
+        private IPlayer Player { get; set; }
+
         public event Action<Directions> Move;
 
         public event Action Idle;
 
         private void Start()
         {
+            Player = GetComponent<IPlayer>();
             Move += MoveToDirection;
             Idle += () => MoveToDirection(Directions.None);
         }
@@ -27,13 +30,13 @@ namespace Source.PlayerLogic
         {
             if (!enabled)
             {
-                player.Body.velocity = new Vector2(0f, player.Body.velocity.y);
+                Player.Body.velocity = new Vector2(0f, Player.Body.velocity.y);
             }
-            if (player.controls.IsLeftPressed)
+            if (Player.Controls.IsLeftPressed)
             {
                 Move(Directions.Left);
             }
-            else if (player.controls.IsRightPressed)
+            else if (Player.Controls.IsRightPressed)
             {
                 Move(Directions.Right);
             }
@@ -45,8 +48,8 @@ namespace Source.PlayerLogic
 
         private void MoveToDirection(Directions direction)
         {
-            player.Body.velocity = new Vector2((int)direction * maxSpeed, 
-                player.Body.velocity.y);
+            Player.Body.velocity = new Vector2((int)direction * maxSpeed, 
+                Player.Body.velocity.y);
         
             if ((int)direction > 0 && !isOrientationRight
                 || (int)direction < 0 && isOrientationRight)
@@ -62,6 +65,11 @@ namespace Source.PlayerLogic
             scale.x *= -1;
             transform1.localScale = scale;
             isOrientationRight = !isOrientationRight;
+        }
+
+        public void Switch(bool mode)
+        {
+            enabled = mode;
         }
     }
 }

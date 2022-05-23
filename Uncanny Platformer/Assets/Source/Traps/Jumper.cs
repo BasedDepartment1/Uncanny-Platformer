@@ -1,4 +1,4 @@
-using Source.Interfaces;
+using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source.Traps

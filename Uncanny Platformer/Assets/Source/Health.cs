@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Source
 {
-    public class Health : MonoBehaviour, IHealth
+    public class Health : MonoBehaviour, IHealth, IDamageable
     {
         public float CurrentHealth { get; private set; }
     
@@ -79,6 +79,16 @@ namespace Source
             {
                 Physics2D.IgnoreLayerCollision(entityLayerIndex, layerIndex, mode);
             }
+        }
+        
+        public void Damage(float damage)
+        {
+            ReduceHealthPoints(damage);
+        }
+
+        public void Kill()
+        {
+            ReduceHealthPoints(CurrentHealth * 10);
         }
     }
 }

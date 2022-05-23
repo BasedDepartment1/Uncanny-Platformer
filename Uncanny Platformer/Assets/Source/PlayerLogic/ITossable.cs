@@ -1,4 +1,4 @@
-namespace Source.Interfaces
+namespace Source.PlayerLogic
 {
     public interface ITossable
     {

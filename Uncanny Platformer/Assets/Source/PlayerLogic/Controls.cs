@@ -2,22 +2,18 @@ using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class Controls : MonoBehaviour
+    public class Controls : MonoBehaviour, IControls
     {
-        [Header("Player script")] [SerializeField]
-        private Player player;
-    
         [Header("Control scheme")]
         [SerializeField] private KeyCode moveLeftKey = KeyCode.A;
         [SerializeField] private KeyCode moveRightKey = KeyCode.D;
         [SerializeField] private KeyCode jumpKey = KeyCode.W;
         [SerializeField] private KeyCode throwKey = KeyCode.R;
     
-        internal bool IsRightPressed;
-        internal bool IsLeftPressed;
-        internal bool IsJumpPressed;
-    
-        internal bool IsRangedAttackPressed;
+        public bool IsRightPressed { get; set; }
+        public bool IsLeftPressed { get; set; }
+        public bool IsJumpPressed { get; set; }
+        public bool IsRangedAttackPressed { get; set; }
 
         private void CheckOnMoves()
         {
@@ -33,8 +29,15 @@ namespace Source.PlayerLogic
 
         private void Update()
         {
+            if (!enabled) return;
+            
             CheckOnMoves();
             CheckOnCombatActions();
+        }
+
+        public void Switch(bool mode)
+        {
+            enabled = mode;
         }
     }
 }

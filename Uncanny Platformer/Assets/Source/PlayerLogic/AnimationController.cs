@@ -16,7 +16,7 @@ namespace Source.PlayerLogic
     
     public class AnimationController : MonoBehaviour
     {
-        [SerializeField] private Player player;
+        // [SerializeField] private Player player;
         [SerializeField] private float rangedAttackDelay = 0.7f;
 
         private string currentState;
@@ -24,6 +24,8 @@ namespace Source.PlayerLogic
         private bool isHurting;
     
         private Animator animator;
+        
+        private IPlayer Player { get; set; }
 
         private Action<float> onJump;
         private Action onThrow;
@@ -32,33 +34,34 @@ namespace Source.PlayerLogic
 
         private void Start()
         {
+            Player = GetComponent<IPlayer>();
             animator = GetComponent<Animator>();
             SetUpEvents();
-            player.movement.Move += onMove;
-            player.movement.Idle += OnIdle;
-            player.jump.PerformJump += onJump;
-            player.rangedCombat.Throw += onThrow;
-            player.health.HpChanged += onHpChanged;
-            player.health.Death += OnDeath;
+            Player.Movement.Move += onMove;
+            Player.Movement.Idle += OnIdle;
+            Player.Jump.PerformJump += onJump;
+            Player.RangedCombat.Throw += onThrow;
+            Player.Health.HpChanged += onHpChanged;
+            Player.Health.Death += OnDeath;
         }
         
         private void Update()
         {
             if (!enabled) return;
             
-            PlayFall(player.Body.velocity);
+            PlayFall(Player.Body.velocity);
         }
 
         private void OnIdle()
         {
-            if (isThrowing || isHurting || !player.IsGrounded()) return;
+            if (isThrowing || isHurting || !Player.IsGrounded()) return;
             
             ChangeAnimationState(AnimStates.Idle);
         }
 
         private void PlayMove()
         {
-            if (isThrowing || isHurting || !player.IsGrounded()) return;
+            if (isThrowing || isHurting || !Player.IsGrounded()) return;
             
             ChangeAnimationState(AnimStates.Run);
         }
@@ -67,11 +70,11 @@ namespace Source.PlayerLogic
         {
             ChangeAnimationState(AnimStates.Death);
             enabled = false;
-            player.movement.Move -= onMove;
-            player.movement.Idle -= OnIdle;
-            player.jump.PerformJump -= onJump;
-            player.rangedCombat.Throw -= onThrow;
-            player.health.HpChanged -= onHpChanged;
+            Player.Movement.Move -= onMove;
+            Player.Movement.Idle -= OnIdle;
+            Player.Jump.PerformJump -= onJump;
+            Player.RangedCombat.Throw -= onThrow;
+            Player.Health.HpChanged -= onHpChanged;
         }
 
         private void SetUpEvents()
@@ -109,7 +112,7 @@ namespace Source.PlayerLogic
 
         private void PlayFall(Vector2 velocity)
         {
-            if (!player.IsGrounded() && velocity.y < 0)
+            if (!Player.IsGrounded() && velocity.y < 0)
             {
                 ChangeAnimationState(AnimStates.Fall);
             }
@@ -117,7 +120,7 @@ namespace Source.PlayerLogic
 
         private void PlayJump()
         {
-            if (player.Body.velocity.y > 0)
+            if (Player.Body.velocity.y > 0)
             {
                 ChangeAnimationState(AnimStates.Jump);
             }
