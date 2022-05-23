@@ -19,13 +19,22 @@ namespace Source
         [SerializeField] private int[] damagingLayerIndices;
 
         public bool IsDead { get; set; }
-        internal bool WasHurt;
 
         private SpriteRenderer sprite;
 
         public event Action HpChanged;
 
         public event Action Death;
+
+        public void Damage(float damage)
+        {
+            ReduceHealthPoints(damage);
+        }
+
+        public void Kill()
+        {
+            ReduceHealthPoints(CurrentHealth * 10);
+        }
 
         private void Start()
         {
@@ -34,7 +43,7 @@ namespace Source
             HpChanged += CheckHp;
         }
 
-        public void ReduceHealthPoints(float damage)
+        private void ReduceHealthPoints(float damage)
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, startingHealth);
             HpChanged();
@@ -53,11 +62,15 @@ namespace Source
         }
 
         // public void Revive()
+
         // {
+
         //     CurrentHealth = startingHealth;
+
         //     IsDead = false;
+
         // }
-        
+
 
         private IEnumerator ActivateInvisibility()
         {
@@ -79,16 +92,6 @@ namespace Source
             {
                 Physics2D.IgnoreLayerCollision(entityLayerIndex, layerIndex, mode);
             }
-        }
-        
-        public void Damage(float damage)
-        {
-            ReduceHealthPoints(damage);
-        }
-
-        public void Kill()
-        {
-            ReduceHealthPoints(CurrentHealth * 10);
         }
     }
 }

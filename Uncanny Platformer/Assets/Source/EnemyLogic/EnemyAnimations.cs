@@ -30,24 +30,6 @@ namespace Source.EnemyLogic
             Enemy.Health.Death += OnDeath;
         }
 
-        // void Update()
-        // {
-        //     // if (enemy.health.IsDead)
-        //     // {
-        //     //     ChangeAnimationState(EnemyAnimationStates.Die);
-        //     //     return;
-        //     // }
-        //     //
-        //     // TryPlayHurtAnimation();
-        //     //
-        //     // if (!isHurting)
-        //     // {
-        //     //     ChangeAnimationState(enemy.movement.isMoving 
-        //     //         ? EnemyAnimationStates.Move 
-        //     //         : EnemyAnimationStates.Idle);
-        //     // }
-        // }
-
         private void OnDeath()
         {
             ChangeAnimationState(EnemyAnimationStates.Die);

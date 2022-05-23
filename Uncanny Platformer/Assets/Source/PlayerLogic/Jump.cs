@@ -17,6 +17,14 @@ namespace Source.PlayerLogic
 
         public event Action<float> PerformJump;
 
+        public void Toss(float force)
+        {
+            if (PerformJump != null)
+            {
+                PerformJump(force);
+            }
+        }
+
         private void Start()
         {
             Player = GetComponent<IPlayer>();
@@ -36,21 +44,13 @@ namespace Source.PlayerLogic
             PerformJump(jumpForce);
             
         }
-        
+
         private void MakeJump(float force)
         {
             if (jumpCount >= maxJumpCount) return;
             
             Player.Body.velocity = new Vector2(Player.Body.velocity.x, force);
             jumpCount++;
-        }
-        
-        public void Toss(float force)
-        {
-            if (PerformJump != null)
-            {
-                PerformJump(force);
-            }
         }
     }
 }

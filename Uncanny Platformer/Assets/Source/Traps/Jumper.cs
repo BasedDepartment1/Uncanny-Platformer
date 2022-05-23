@@ -9,7 +9,10 @@ namespace Source.Traps
     
         private void OnTriggerEnter2D(Collider2D other)
         {
-            other.GetComponent<ITossable>()?.Toss(jumpForce);
+            if (other.GetComponent<ITossable>() == null) return;
+            
+            other.GetComponent<ITossable>().Toss(jumpForce);
+            FindObjectOfType<AudioManager>().Play("JumperSound");
         }
     }
 }

@@ -44,12 +44,30 @@ namespace Source.PlayerLogic
             Player.Health.HpChanged += onHpChanged;
             Player.Health.Death += OnDeath;
         }
-        
+
         private void Update()
         {
             if (!enabled) return;
             
             PlayFall(Player.Body.velocity);
+        }
+
+        private void SetUpEvents()
+        {
+            onMove = _ => PlayMove();
+            
+            onJump = _ => PlayJump();
+            
+            onThrow = () => PlayWithoutDisruption(
+                ref isThrowing,
+                AnimStates.Throw,
+                nameof(EndThrow),
+                rangedAttackDelay);
+            
+            onHpChanged = () => PlayWithoutDisruption(
+                ref isHurting, 
+                AnimStates.Hurt, 
+                nameof(StopHurting));
         }
 
         private void OnIdle()
@@ -75,24 +93,6 @@ namespace Source.PlayerLogic
             Player.Jump.PerformJump -= onJump;
             Player.RangedCombat.Throw -= onThrow;
             Player.Health.HpChanged -= onHpChanged;
-        }
-
-        private void SetUpEvents()
-        {
-            onMove = directions => PlayMove();
-            
-            onJump = (float _) => PlayJump();
-            
-            onThrow = () => PlayWithoutDisruption(
-                ref isThrowing,
-                AnimStates.Throw,
-                nameof(EndThrow),
-                rangedAttackDelay);
-            
-            onHpChanged = () => PlayWithoutDisruption(
-                ref isHurting, 
-                AnimStates.Hurt, 
-                nameof(StopHurting));
         }
 
         private void PlayWithoutDisruption(
