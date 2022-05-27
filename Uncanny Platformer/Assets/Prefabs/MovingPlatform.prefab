@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5420253798354602864}
   m_Layer: 9
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5420253798354602875}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3441896, y: -0.9167511, z: 4.4219136}
+  m_LocalPosition: {x: -12.23, y: -0.9167511, z: 4.4219136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5420253799756679380}
@@ -126,9 +126,9 @@ PlatformEffector2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RotationalOffset: 0
-  m_UseOneWay: 0
+  m_UseOneWay: 1
   m_UseOneWayGrouping: 0
-  m_SurfaceArc: 200
+  m_SurfaceArc: 179
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 5420253799676690683}
   - {fileID: 5420253799498870426}
-  speed: 2
+  speed: 3
 --- !u!114 &5420253798354602864
 MonoBehaviour:
   m_ObjectHideFlags: 0
