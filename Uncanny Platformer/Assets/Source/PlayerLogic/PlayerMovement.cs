@@ -48,8 +48,7 @@ namespace Source.PlayerLogic
 
         private void MoveToDirection(Directions direction)
         {
-            Player.Body.velocity = new Vector2((int)direction * maxSpeed, 
-                Player.Body.velocity.y);
+            Player.Body.velocity = GetPlayerVelocity((int)direction, maxSpeed, Player.Body.velocity);
         
             if ((int)direction > 0 && !isOrientationRight
                 || (int)direction < 0 && isOrientationRight)
@@ -58,6 +57,12 @@ namespace Source.PlayerLogic
             }
         }
 
+        public Vector2 GetPlayerVelocity(int direction, float maxSpeed, Vector2 velocity)
+        {
+            return new Vector2(direction * maxSpeed,
+                velocity.y);
+        } 
+        
         private void Flip()
         {
             var transform1 = transform;
