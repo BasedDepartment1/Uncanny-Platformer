@@ -19,10 +19,7 @@ namespace Source.PlayerLogic
 
         public void Toss(float force)
         {
-            if (PerformJump != null)
-            {
-                PerformJump(force);
-            }
+            PerformJump?.Invoke(force);
         }
 
         private void Start()
@@ -40,15 +37,13 @@ namespace Source.PlayerLogic
 
             if (!Player.Controls.IsJumpPressed) return;
             Player.Controls.IsJumpPressed = false;
-            
+            if (jumpCount >= maxJumpCount) return;
             PerformJump(jumpForce);
             
         }
 
         private void MakeJump(float force)
         {
-            if (jumpCount >= maxJumpCount) return;
-            
             Player.Body.velocity = new Vector2(Player.Body.velocity.x, force);
             jumpCount++;
         }

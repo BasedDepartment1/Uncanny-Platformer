@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Source.EnemyLogic
@@ -9,24 +10,38 @@ namespace Source.EnemyLogic
         private AudioManager manager;
         private string currentSound;
 
+        private Action onHurt;
+
         private void Start()
         {
             Enemy = GetComponent<IEnemy>();
             manager = FindObjectOfType<AudioManager>();
-            Enemy.PatrolBehaviour.Move += OnMove;
+            SetUpEvents();
+            Enemy.Health.HpChanged += onHurt;
+            Enemy.Health.Death += OnDeath;
         }
         
-        private void OnMove(Directions _)
+        private void SetUpEvents()
         {
-            ChangeSound("SlimeMove");
+            onHurt = () => ChangeSound("SlimeHurt");
         }
-        
+
+        private void OnDeath()
+        {
+            ChangeSound("SlimeDeath");
+            enabled = false;
+            Enemy.Health.HpChanged -= onHurt;
+            Enemy.Health.Death -= OnDeath;
+        }
         private void ChangeSound(string newSound)
         {
             if (newSound == currentSound) return;
-
+        
             currentSound = newSound;
-            manager.Play(currentSound);
+            manager.Play(currentSound, out var length);
+            Invoke(nameof(Refresh), length);
         }
+
+        private void Refresh() => currentSound = null;
     }
 }

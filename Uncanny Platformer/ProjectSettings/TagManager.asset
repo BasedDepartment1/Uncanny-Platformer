@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Trap
   - Knife
+  - Platform
   layers:
   - Default
   - TransparentFX

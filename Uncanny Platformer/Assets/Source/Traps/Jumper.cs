@@ -12,7 +12,7 @@ namespace Source.Traps
             if (other.GetComponent<ITossable>() == null) return;
             
             other.GetComponent<ITossable>().Toss(jumpForce);
-            FindObjectOfType<AudioManager>().Play("JumperSound");
+            FindObjectOfType<AudioManager>().Play("JumperSound", out var length);
         }
     }
 }
