@@ -39,8 +39,7 @@ namespace Source.PlayerLogic
 
         private void ChangeSound(string newSound)
         {
-            if (newSound == currentSound) return;
-        
+            //if (newSound == currentSound) return;
             currentSound = newSound;
             manager.Play(currentSound);
         }
