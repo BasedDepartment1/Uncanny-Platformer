@@ -6,6 +6,7 @@ namespace Source.EnemyLogic
     public class Enemy : MonoBehaviour, IEnemy
     {
         [SerializeField] private EnemyCollisions collisions;
+        [SerializeField] private bool isLevel3;
         
         public IHealth Health { get; private set; }
         public IMovement PatrolBehaviour { get; private set; }
@@ -23,6 +24,12 @@ namespace Source.EnemyLogic
         {
             collisions.enabled = false;
             PatrolBehaviour.Switch(false);
+            Body.gravityScale = 0;
+            GetComponent<Collider2D>().enabled = false;
+            if (isLevel3)
+            {
+                gameObject.SetActive(false);
+            }
         }
     }
 }
