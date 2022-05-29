@@ -51,7 +51,7 @@ namespace Source
             var yCoord = (float) y / height * scale + offsetY;
 
             var colorCode = perlinNoiseGenerator.Noise(xCoord, yCoord);
-            return new Color(colorCode + colorOffset, colorCode + colorOffset, colorCode + colorOffset, colorCode);
+            return new Color(colorCode + colorOffset, colorCode + colorOffset, colorCode + colorOffset, colorCode*0.25f);
         }
     }
 }
