@@ -21949,7 +21949,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8033066, y: -3.4899998, z: -10}
+  m_LocalPosition: {x: 4.5959864, y: -3.4899998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -23332,7 +23332,7 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: eb8d02cf228064279975fe7775673b67, type: 3}
-    volume: 0
+    volume: 0.1
     volumeVariance: 0
     pitch: 0.7
     pitchVariance: 0
@@ -79814,7 +79814,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036849235}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.8033066, y: -3.4899998, z: -10}
+  m_LocalPosition: {x: 4.5959864, y: -3.4899998, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 877438179}
