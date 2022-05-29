@@ -49679,6 +49679,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8539835956974349936, guid: e77e887131e21e848a20998cbeb35896, type: 3}
+      propertyPath: damagingLayerIndices.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8539835956974349936, guid: e77e887131e21e848a20998cbeb35896, type: 3}
+      propertyPath: damagingLayerIndices.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8539835956974349940, guid: e77e887131e21e848a20998cbeb35896, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.52
@@ -49687,6 +49695,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.07
       objectReference: {fileID: 0}
+    - target: {fileID: 8539835956974349941, guid: e77e887131e21e848a20998cbeb35896, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1099882915}
     - target: {fileID: 8539835956974349946, guid: e77e887131e21e848a20998cbeb35896, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -51915,7 +51927,7 @@ MonoBehaviour:
   knifeSpeed: 30
   firePosition: {fileID: 577561259}
   throwingKnife: {fileID: 1631797512}
-  throwingAnimation: {fileID: 0}
+  throwingAnimation: {fileID: 7400000, guid: 71e803aa85f4d4f8dabf2bb77923159a, type: 2}
   animationDelay: 0.6
 --- !u!114 &1099882914
 MonoBehaviour:
@@ -53634,7 +53646,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.012541175, y: 0.03762293}
+  m_Offset: {x: -0.2525161, y: -0.021147132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -53645,7 +53657,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8578694, y: 0.74081993}
+  m_Size: {x: 1.6868671, y: 1.7987001}
   m_EdgeRadius: 0
 --- !u!4 &1631797518
 Transform:
@@ -53655,8 +53667,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631797512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -997.2491, y: -1003.0277, z: 0}
-  m_LocalScale: {x: 0.9959935, y: 1.002927, z: 1}
+  m_LocalPosition: {x: 7.5534, y: -11111, z: 0}
+  m_LocalScale: {x: 0.26533267, y: 0.26717976, z: 0.2664}
   m_Children: []
   m_Father: {fileID: 1099882920}
   m_RootOrder: 1
@@ -54840,6 +54852,7 @@ GameObject:
   - component: {fileID: 1977119300}
   - component: {fileID: 1977119299}
   - component: {fileID: 1977119298}
+  - component: {fileID: 1977119301}
   m_Layer: 9
   m_Name: HardGround
   m_TagString: Ground
@@ -58468,7 +58481,7 @@ CompositeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 1
@@ -58929,14 +58942,6 @@ CompositeCollider2D:
       - {x: 103.99997, y: 32}
       - {x: 103, y: 31.999971}
       - {x: 103.00003, y: 31}
-    - - {x: 128.99997, y: 12}
-      - {x: 129.00003, y: 22}
-      - {x: 137, y: 21.999971}
-      - {x: 137.00003, y: 12}
-      - {x: 138, y: 12.00003}
-      - {x: 137.99997, y: 23}
-      - {x: 128, y: 22.999971}
-      - {x: 128.00003, y: 12}
     - - {x: 184.99997, y: 12}
       - {x: 185.00003, y: 22}
       - {x: 193, y: 21.999971}
@@ -58945,6 +58950,14 @@ CompositeCollider2D:
       - {x: 193.99997, y: 23}
       - {x: 184, y: 22.999971}
       - {x: 184.00003, y: 12}
+    - - {x: 128.99997, y: 12}
+      - {x: 129.00003, y: 22}
+      - {x: 137, y: 21.999971}
+      - {x: 137.00003, y: 12}
+      - {x: 138, y: 12.00003}
+      - {x: 137.99997, y: 23}
+      - {x: 128, y: 22.999971}
+      - {x: 128.00003, y: 12}
     - - {x: 52.999973, y: -3}
       - {x: 53.00003, y: 12}
       - {x: 98, y: 12.00003}
@@ -59032,6 +59045,25 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!251 &1977119301
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977119294}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &2018583748
 GameObject:
   m_ObjectHideFlags: 0
