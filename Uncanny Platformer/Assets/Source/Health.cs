@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source
@@ -17,8 +18,6 @@ namespace Source
 
         [SerializeField] private int entityLayerIndex;
         [SerializeField] private int[] damagingLayerIndices;
-
-        public bool IsDead { get; set; }
 
         private SpriteRenderer sprite;
 
@@ -41,12 +40,18 @@ namespace Source
             CurrentHealth = startingHealth;
             sprite = GetComponent<SpriteRenderer>();
             HpChanged += CheckHp;
+            
+            var respawn = GetComponent<IRespawnable>();
+            if (respawn != null)
+            {
+                respawn.Respawn += () => CurrentHealth = startingHealth;
+            }
         }
 
         private void ReduceHealthPoints(float damage)
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, startingHealth);
-            HpChanged();
+            HpChanged?.Invoke();
         }
 
         private void CheckHp()
@@ -57,20 +62,9 @@ namespace Source
             }
             else
             {
-                Death();
+                Death?.Invoke();
             }
         }
-
-        // public void Revive()
-
-        // {
-
-        //     CurrentHealth = startingHealth;
-
-        //     IsDead = false;
-
-        // }
-
 
         private IEnumerator ActivateInvisibility()
         {

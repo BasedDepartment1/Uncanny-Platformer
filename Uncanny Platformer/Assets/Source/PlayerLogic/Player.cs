@@ -4,21 +4,13 @@ namespace Source.PlayerLogic
 {
     public class Player : MonoBehaviour, IPlayer
     {
-        // [SerializeField] public Controls controls;
-        // [SerializeField] internal PlayerMovement movement;
-        // [SerializeField] internal Jump jump;
-        // [SerializeField] internal RangedCombat rangedCombat;
-        // [SerializeField] internal Health health;
-        // public 
-        [SerializeField] private Transform spawnPoint;
-        [SerializeField] private float deathTime = 1f;
         [SerializeField] private float boxCastLength = 0.1f;
 
         [SerializeField] private LayerMask groundLayer;
         private BoxCollider2D boxCollider;
-
-        public Rigidbody2D Body { get; private set; }
         
+        public IRespawnable Respawn { get; private set; }
+        public Rigidbody2D Body { get; private set; }
         public IControls Controls { get; private set; }
         public IMovement Movement { get; private set; }
         public IJump Jump { get; private set; }
@@ -47,7 +39,8 @@ namespace Source.PlayerLogic
         private void Awake()
         {
             SetUpComponents();
-            // health.Death += Deactivate;
+            Health.Death += () => SetActive(false);
+            Respawn.Respawn += () => SetActive(true);
         }
 
         private void SetUpComponents()
@@ -59,12 +52,13 @@ namespace Source.PlayerLogic
             Jump = GetComponent<IJump>();
             RangedCombat = GetComponent<IRangedCombat>();
             Health = GetComponent<IHealth>();
+            Respawn = GetComponent<IRespawnable>();
         }
 
-        // private void Deactivate()
-        // {
-        //     Controls.enabled = false;
-        //     Movement.enabled = false;
-        // }
+        private void SetActive(bool mode)
+        {
+            Controls.Switch(mode);
+            Movement.Switch(mode);
+        }
     }
 }

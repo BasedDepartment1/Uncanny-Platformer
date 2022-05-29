@@ -16,7 +16,6 @@ namespace Source.PlayerLogic
     
     public class AnimationController : MonoBehaviour
     {
-        // [SerializeField] private Player player;
         [SerializeField] private float rangedAttackDelay = 0.7f;
 
         private string currentState;
@@ -37,12 +36,8 @@ namespace Source.PlayerLogic
             Player = GetComponent<IPlayer>();
             animator = GetComponent<Animator>();
             SetUpEvents();
-            Player.Movement.Move += onMove;
-            Player.Movement.Idle += OnIdle;
-            Player.Jump.PerformJump += onJump;
-            Player.RangedCombat.Throw += onThrow;
-            Player.Health.HpChanged += onHpChanged;
             Player.Health.Death += OnDeath;
+            Player.Respawn.Respawn += SetUpEvents;
         }
 
         private void Update()
@@ -68,6 +63,12 @@ namespace Source.PlayerLogic
                 ref isHurting, 
                 AnimStates.Hurt, 
                 nameof(StopHurting));
+            
+            Player.Movement.Move += onMove;
+            Player.Movement.Idle += OnIdle;
+            Player.Jump.PerformJump += onJump;
+            Player.RangedCombat.Throw += onThrow;
+            Player.Health.HpChanged += onHpChanged;
         }
 
         private void OnIdle()
