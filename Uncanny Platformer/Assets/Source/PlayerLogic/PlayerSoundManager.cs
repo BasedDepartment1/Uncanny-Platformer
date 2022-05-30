@@ -44,6 +44,8 @@ namespace Source.PlayerLogic
 
         private void ChangeSound(string newSound)
         {
+            if (newSound == currentSound) return;
+            
             currentSound = newSound;
             manager.Play(currentSound, out var length);
             Invoke(nameof(Refresh), length);
