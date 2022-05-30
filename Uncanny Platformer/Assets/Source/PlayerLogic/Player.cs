@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -41,6 +42,14 @@ namespace Source.PlayerLogic
             SetUpComponents();
             Health.Death += () => SetActive(false);
             Respawn.Respawn += () => SetActive(true);
+        }
+
+        private void Update()
+        {
+            if (Input.GetKey(KeyCode.Q))
+            {
+                GetComponent<IDamageable>().Kill();
+            }
         }
 
         private void SetUpComponents()

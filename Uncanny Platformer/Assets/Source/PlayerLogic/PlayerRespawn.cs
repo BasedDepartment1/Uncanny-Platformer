@@ -15,6 +15,8 @@ namespace Source.PlayerLogic
 
         public void SetSpawn(SpawnPoint spawnPoint)
         {
+            if (currentSpawnPoint.Position == spawnPoint.Position) return;
+            
             currentSpawnPoint.Switch(false);
             currentSpawnPoint = spawnPoint;
             currentSpawnPoint.Switch(true);
@@ -30,12 +32,17 @@ namespace Source.PlayerLogic
 
         private void OnDeath()
         {
-            Invoke(nameof(Respawn), deathTime);
+            Invoke(nameof(ActivateRespawn), deathTime);
         }
 
         private void OnRespawn()
         {
             Player.Body.position = currentSpawnPoint.Position;
+        }
+
+        private void ActivateRespawn()
+        {
+            Respawn?.Invoke();
         }
     }
 }

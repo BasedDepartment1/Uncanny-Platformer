@@ -1,9 +1,8 @@
-using System;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    enum SpawnAnimations
+    internal enum SpawnAnimations
     {
         Active,
         Inactive
@@ -11,20 +10,32 @@ namespace Source.PlayerLogic
     
     public class SpawnPoint : MonoBehaviour, ISwitchable
     { 
-        public Vector2 Position => transform.position;
+        [SerializeField] private Transform point;
+        
+        public Vector2 Position => point.transform.position;
 
+        private bool isActive;
         private Animator animator;
 
         public void Switch(bool mode)
         {
+            isActive = mode;
             animator.Play(mode 
                 ? SpawnAnimations.Active.ToString() 
                 : SpawnAnimations.Inactive.ToString());
+
+            if (mode)
+            {
+                //TODO play sound 
+            }
         }
 
         private void Start()
         {
             animator = GetComponent<Animator>();
+            animator.Play(isActive 
+                ? SpawnAnimations.Active.ToString() 
+                : SpawnAnimations.Inactive.ToString());
         }
 
         private void OnTriggerEnter2D(Collider2D other)
