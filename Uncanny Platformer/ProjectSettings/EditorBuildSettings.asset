@@ -12,9 +12,24 @@ EditorBuildSettings:
     path: Assets/Scenes/TutorialRoom.unity
     guid: 24237075188cf4d7d8501a805c9125e4
   - enabled: 1
+    path: Assets/Scenes/cutScene1-2.unity
+    guid: 76012ea453dba47a9b48de99f73c7883
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 321995900f7d846bc8fe469a13ff1b06
   - enabled: 1
+    path: Assets/Scenes/cutScene2-3.unity
+    guid: 9234077ffbec3431093b45639574a2c0
+  - enabled: 1
     path: Assets/Scenes/Leve2.unity
     guid: 0ea51b2e30a3c4a9da18714e477dc0c2
+  - enabled: 1
+    path: Assets/Scenes/cutScene3-4.unity
+    guid: 4e18fff87afec4391a2d2b6454acc202
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 658752f79d02f42ab9224a69dac1d6b8
+  - enabled: 1
+    path: Assets/Scenes/cutScene4-5.unity
+    guid: 36583c84b49d141d38d2b27f5727552e
   m_configObjects: {}
