@@ -37,7 +37,7 @@ namespace Source.PlayerLogic
             animator = GetComponent<Animator>();
             SetUpEvents();
             Player.Health.Death += OnDeath;
-            Player.Respawn.Respawn += SetUpEvents;
+            Player.Respawn.Respawn += OnRespawn;
         }
 
         private void Update()
@@ -60,10 +60,10 @@ namespace Source.PlayerLogic
                 rangedAttackDelay);
             
             onHpChanged = () => PlayWithoutDisruption(
-                ref isHurting, 
-                AnimStates.Hurt, 
-                nameof(StopHurting));
-            
+                    ref isHurting,
+                    AnimStates.Hurt,
+                    nameof(StopHurting));
+
             Player.Movement.Move += onMove;
             Player.Movement.Idle += OnIdle;
             Player.Jump.PerformJump += onJump;
@@ -78,6 +78,17 @@ namespace Source.PlayerLogic
             ChangeAnimationState(AnimStates.Idle);
         }
 
+        private void OnDeath()
+        {
+            Player.Movement.Move -= onMove;
+            Player.Movement.Idle -= OnIdle;
+            Player.Jump.PerformJump -= onJump;
+            Player.RangedCombat.Throw -= onThrow;
+            Player.Health.HpChanged -= onHpChanged;
+            enabled = false;
+            ChangeAnimationState(AnimStates.Death);
+        }
+
         private void PlayMove()
         {
             if (isThrowing || isHurting || !Player.IsGrounded()) return;
@@ -85,15 +96,10 @@ namespace Source.PlayerLogic
             ChangeAnimationState(AnimStates.Run);
         }
 
-        private void OnDeath()
+        private void OnRespawn()
         {
-            ChangeAnimationState(AnimStates.Death);
-            enabled = false;
-            Player.Movement.Move -= onMove;
-            Player.Movement.Idle -= OnIdle;
-            Player.Jump.PerformJump -= onJump;
-            Player.RangedCombat.Throw -= onThrow;
-            Player.Health.HpChanged -= onHpChanged;
+            SetUpEvents();
+            enabled = true;
         }
 
         private void PlayWithoutDisruption(

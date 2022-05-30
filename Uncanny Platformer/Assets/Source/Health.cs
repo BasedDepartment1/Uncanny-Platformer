@@ -20,6 +20,7 @@ namespace Source
         [SerializeField] private int[] damagingLayerIndices;
 
         private SpriteRenderer sprite;
+        private bool isDead;
 
         public event Action HpChanged;
 
@@ -27,12 +28,18 @@ namespace Source
 
         public void Damage(float damage)
         {
-            ReduceHealthPoints(damage);
+            for (var i = 0; i < 10; i++)
+            {
+                ReduceHealthPoints(damage / 10);
+            }
         }
 
         public void Kill()
         {
-            ReduceHealthPoints(CurrentHealth * 10);
+            for (var i = 0; i < 10; i++)
+            {
+                ReduceHealthPoints(startingHealth / 10);
+            }
         }
 
         private void Start()
@@ -40,11 +47,12 @@ namespace Source
             CurrentHealth = startingHealth;
             sprite = GetComponent<SpriteRenderer>();
             HpChanged += CheckHp;
+            Death += () => isDead = true;
             
             var respawn = GetComponent<IRespawnable>();
             if (respawn != null)
             {
-                respawn.Respawn += () => CurrentHealth = startingHealth;
+                respawn.Respawn += OnRespawn;
             }
         }
 
@@ -56,7 +64,9 @@ namespace Source
 
         private void CheckHp()
         {
-            if (CurrentHealth > 0)
+            if (isDead) return;
+            
+            if (CurrentHealth > 1e-6)
             {
                 StartCoroutine(ActivateInvisibility());
             }
@@ -64,6 +74,12 @@ namespace Source
             {
                 Death?.Invoke();
             }
+        }
+
+        private void OnRespawn()
+        {
+            CurrentHealth = startingHealth;
+            isDead = false;
         }
 
         private IEnumerator ActivateInvisibility()
