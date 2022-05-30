@@ -5,7 +5,6 @@ namespace Source.PlayerLogic
 {
     public class PlayerSoundManager : MonoBehaviour
     {
-        private bool isMoving;
         private string currentSound;
         private AudioManager manager;
         
@@ -20,11 +19,8 @@ namespace Source.PlayerLogic
             Player = GetComponent<IPlayer>();
             manager = FindObjectOfType<AudioManager>();
             SetUpEvents();
-            Player.Jump.PerformJump += onJump;
-            Player.RangedCombat.Throw += onThrow;
             Player.Health.Death += OnDeath;
-            Player.Health.HpChanged += onHurt;
-
+            Player.Respawn.Respawn += SetUpEvents;
         }
 
         private void SetUpEvents()
@@ -32,6 +28,9 @@ namespace Source.PlayerLogic
             onJump = _ => ChangeSound("PlayerJump");
             onThrow = () => ChangeSound("ThrowSword");
             onHurt = () => ChangeSound("PlayerHurt");
+            Player.Health.HpChanged += onHurt;
+            Player.Jump.PerformJump += onJump;
+            Player.RangedCombat.Throw += onThrow;
         }
         
         private void OnDeath()
@@ -41,12 +40,10 @@ namespace Source.PlayerLogic
             Player.Jump.PerformJump -= onJump;
             Player.RangedCombat.Throw -= onThrow;
             Player.Health.HpChanged -= onHurt;
-            Player.Health.Death -= OnDeath;
         }
 
         private void ChangeSound(string newSound)
         {
-            //if (newSound == currentSound) return;
             currentSound = newSound;
             manager.Play(currentSound, out var length);
             Invoke(nameof(Refresh), length);

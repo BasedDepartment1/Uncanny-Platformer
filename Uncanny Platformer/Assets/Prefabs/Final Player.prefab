@@ -148,7 +148,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -463912651
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -4808224517558825982, guid: f8a873871770742af92b15d1ba6614c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -215,6 +215,8 @@ GameObject:
   - component: {fileID: 3805879359057858013}
   - component: {fileID: 3805879359057858008}
   - component: {fileID: 305476646476489245}
+  - component: {fileID: 6772388326680261462}
+  - component: {fileID: 9167898566610026684}
   m_Layer: 6
   m_Name: Final Player
   m_TagString: Player
@@ -276,7 +278,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -463912651
-  m_SortingLayer: 6
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -2863022024336725367, guid: fa4cb467e85804944b3e0f645b1f43e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -348,8 +350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0d8371a0bcaf77478825908b580b9a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 0}
-  deathTime: 2
   boxCastLength: 0.1
   groundLayer:
     serializedVersion: 2
@@ -465,3 +465,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpForce: 10
   maxJumpCount: 3
+--- !u!114 &6772388326680261462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307323258032252064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ba0a79093e4c81ab700d2b05401135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &9167898566610026684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307323258032252064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d09b044b921b4127b58f7d710504dbda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 2
+  currentSpawnPoint: {fileID: 0}

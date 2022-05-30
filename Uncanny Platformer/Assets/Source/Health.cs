@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Source.PlayerLogic;
 using UnityEngine;
 
 namespace Source
@@ -18,9 +19,8 @@ namespace Source
         [SerializeField] private int entityLayerIndex;
         [SerializeField] private int[] damagingLayerIndices;
 
-        public bool IsDead { get; set; }
-
         private SpriteRenderer sprite;
+        private bool isDead;
 
         public event Action HpChanged;
 
@@ -28,12 +28,18 @@ namespace Source
 
         public void Damage(float damage)
         {
-            ReduceHealthPoints(damage);
+            for (var i = 0; i < 10; i++)
+            {
+                ReduceHealthPoints(damage / 10);
+            }
         }
 
         public void Kill()
         {
-            ReduceHealthPoints(CurrentHealth * 10);
+            for (var i = 0; i < 10; i++)
+            {
+                ReduceHealthPoints(startingHealth / 10);
+            }
         }
 
         private void Start()
@@ -41,36 +47,40 @@ namespace Source
             CurrentHealth = startingHealth;
             sprite = GetComponent<SpriteRenderer>();
             HpChanged += CheckHp;
+            Death += () => isDead = true;
+            
+            var respawn = GetComponent<IRespawnable>();
+            if (respawn != null)
+            {
+                respawn.Respawn += OnRespawn;
+            }
         }
 
         private void ReduceHealthPoints(float damage)
         {
             CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, startingHealth);
-            HpChanged();
+            HpChanged?.Invoke();
         }
 
         private void CheckHp()
         {
-            if (CurrentHealth > 0)
+            if (isDead) return;
+            
+            if (CurrentHealth > 1e-6)
             {
                 StartCoroutine(ActivateInvisibility());
             }
             else
             {
-                Death();
+                Death?.Invoke();
             }
         }
 
-        // public void Revive()
-
-        // {
-
-        //     CurrentHealth = startingHealth;
-
-        //     IsDead = false;
-
-        // }
-
+        private void OnRespawn()
+        {
+            CurrentHealth = startingHealth;
+            isDead = false;
+        }
 
         private IEnumerator ActivateInvisibility()
         {

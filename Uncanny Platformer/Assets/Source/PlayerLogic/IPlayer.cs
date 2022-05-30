@@ -7,6 +7,7 @@ namespace Source.PlayerLogic
         IJump Jump { get; }
         IRangedCombat RangedCombat { get; }
         IHealth Health { get; }
+        IRespawnable Respawn { get; }
         
         bool IsGrounded();
     }
