@@ -7,10 +7,11 @@ namespace Source.UI
 {
     public class Cutscene1 : MonoBehaviour
     {
-        private string scene = "Leve2";
+        
+        [SerializeField] private string scene;
         public void NextScene()
         {
-            SceneManager.LoadScene(scene);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         } 
     }
 }
