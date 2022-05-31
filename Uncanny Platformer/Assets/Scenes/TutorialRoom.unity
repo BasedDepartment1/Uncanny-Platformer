@@ -15827,6 +15827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12db2f24ed6d40e58f3cba2a7e220c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hpCanvas: {fileID: 581960864}
   pauseMenuUI: {fileID: 335264887}
 --- !u!1001 &207509051
 PrefabInstance:
@@ -23318,6 +23319,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1206678189497856809, guid: 283bf695360b94e4e912f3ba86ecf8bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 283bf695360b94e4e912f3ba86ecf8bb, type: 3}
+--- !u!223 &581960864 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 1206678189529352975, guid: 283bf695360b94e4e912f3ba86ecf8bb, type: 3}
+  m_PrefabInstance: {fileID: 581960863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &643848319
 GameObject:
   m_ObjectHideFlags: 0
