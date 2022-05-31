@@ -5,8 +5,7 @@ namespace Source
 {
     public class LevelLoader : MonoBehaviour
     {
-        public string levelToLoad;
-        
+
         public void OnTriggerEnter2D(Collider2D collider2D)
         {
             var colliderGameObject = collider2D.gameObject;
@@ -17,7 +16,7 @@ namespace Source
             }
         }
 
-        void LoadScene() => SceneManager.LoadScene(levelToLoad);
+        void LoadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 } 
     
