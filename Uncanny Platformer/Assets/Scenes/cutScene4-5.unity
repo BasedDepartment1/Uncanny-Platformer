@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 124296860}
   - component: {fileID: 124296859}
   - component: {fileID: 124296862}
-  - component: {fileID: 124296863}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -153,14 +152,14 @@ RectTransform:
   m_GameObject: {fileID: 124296857}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 1293280024}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -130.0448, y: 58.313232}
+  m_AnchoredPosition: {x: -400, y: 82}
   m_SizeDelta: {x: 105.1251, y: 44.7366}
   m_Pivot: {x: 0.5, y: 0.5000001}
 --- !u!114 &124296859
@@ -192,9 +191,9 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 1750444543332729658, guid: 0492d9e54e987f6449308187f7b71219, type: 3}
-    m_PressedSprite: {fileID: -6422518442644869477, guid: 0492d9e54e987f6449308187f7b71219, type: 3}
-    m_SelectedSprite: {fileID: -6478336920179053647, guid: 0492d9e54e987f6449308187f7b71219, type: 3}
+    m_HighlightedSprite: {fileID: 6407022336143704597, guid: b36e4dbbb25554fc3aa89c13a3f836a7, type: 3}
+    m_PressedSprite: {fileID: 2641972075366550103, guid: b36e4dbbb25554fc3aa89c13a3f836a7, type: 3}
+    m_SelectedSprite: {fileID: 996917147713343839, guid: b36e4dbbb25554fc3aa89c13a3f836a7, type: 3}
     m_DisabledSprite: {fileID: 2123450410383763621, guid: 0492d9e54e987f6449308187f7b71219, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -207,9 +206,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Source.UI.Cutscene1, Assembly-CSharp
-        m_MethodName: NextScene
+      - m_Target: {fileID: 124296862}
+        m_TargetAssemblyTypeName: FinalButton, Assembly-CSharp
+        m_MethodName: PlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -239,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6478336920179053647, guid: 0492d9e54e987f6449308187f7b71219, type: 3}
+  m_Sprite: {fileID: 996917147713343839, guid: b36e4dbbb25554fc3aa89c13a3f836a7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -266,23 +265,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 124296857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1b3b77b79055ae40bd293cab6ec1b52, type: 3}
+  m_Script: {fileID: 11500000, guid: e9bc21f973b0a49ada3a4f7eafcad5df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 124296859}
---- !u!114 &124296863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 124296857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f62806f9dc554402a0014da4726fd75c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scene: 
 --- !u!1 &376161533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1014,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.000889, y: 0}
+  m_AnchoredPosition: {x: 0.000011444, y: 0}
   m_SizeDelta: {x: 253.6535, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1721956609
