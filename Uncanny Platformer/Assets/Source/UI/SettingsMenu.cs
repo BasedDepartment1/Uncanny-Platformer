@@ -10,6 +10,7 @@ namespace Source.UI
         public AudioMixer audioMixer;
         Resolution[] resolutions;
         public Dropdown resolutionDropdown;
+        
         private void Start()
         {
             resolutions = Screen.resolutions;
@@ -34,8 +35,10 @@ namespace Source.UI
 
         public void SetVolume(float volume)
         {
-            audioMixer.SetFloat("volume", volume);
+            var value = Mathf.Pow(volume, 0.25f) * 100 - 80;
+            audioMixer.SetFloat("volume", value);
         }
+        
         public void SetFullScreen(bool isFullScreen)
         {
             Screen.fullScreen = isFullScreen;
