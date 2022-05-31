@@ -5,6 +5,7 @@ namespace Source.UI
 {
     public class PauseMenu : MonoBehaviour
     {
+        [SerializeField] private Canvas hpCanvas;
         private static bool isPaused = false;
         public GameObject pauseMenuUI;
         
@@ -25,13 +26,15 @@ namespace Source.UI
 
         void Pause()
         {
+            hpCanvas.enabled = false;
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
         }
 
-        void Resume()
+        public void Resume()
         {
+            hpCanvas.enabled = true;
             pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             isPaused = false;
@@ -46,6 +49,11 @@ namespace Source.UI
         public void QuitGame()
         {
             Application.Quit();
+        }
+
+        public void StartLevelAgain()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 }
