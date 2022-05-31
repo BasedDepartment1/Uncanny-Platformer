@@ -1,6 +1,7 @@
+using Source.Interfaces;
 using UnityEngine;
 
-namespace Source.PlayerLogic
+namespace Source.Traps
 {
     internal enum SpawnAnimations
     {
@@ -26,7 +27,7 @@ namespace Source.PlayerLogic
 
             if (mode)
             {
-                //TODO play sound 
+                FindObjectOfType<AudioManager>().Play("Fire", out _);
             }
         }
 

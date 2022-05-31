@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -7,8 +6,6 @@ namespace Source
 {
 	public class AudioManager : MonoBehaviour
 	{
-		public static AudioManager instance;
-
 		public AudioMixerGroup mixerGroup;
 
 		public Sound[] sounds;

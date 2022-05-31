@@ -8,18 +8,13 @@ namespace Source.UI
     {
         private Image image;
         private Animator animator;
+        
         void Start()
         {
             image = GetComponent<Image>();
             image.enabled = false;
             animator = GetComponent<Animator>();
             StartCoroutine(nameof(Cross));
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
         }
 
         private IEnumerator Cross()

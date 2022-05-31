@@ -1,4 +1,5 @@
 using System;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -145,10 +146,8 @@ namespace Source.PlayerLogic
 
         private void ChangeAnimationState(string newState)
         {
-            if (newState == currentState)
-            {
-                return;
-            }
+            if (newState == currentState) return;
+            
             currentState = newState;
             animator.Play(currentState);
         }

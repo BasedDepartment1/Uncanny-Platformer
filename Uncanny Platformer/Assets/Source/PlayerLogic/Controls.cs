@@ -1,3 +1,4 @@
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -10,8 +11,8 @@ namespace Source.PlayerLogic
         [SerializeField] private KeyCode jumpKey = KeyCode.W;
         [SerializeField] private KeyCode throwKey = KeyCode.R;
     
-        public bool IsRightPressed { get; set; }
-        public bool IsLeftPressed { get; set; }
+        public bool IsRightPressed { get; private set; }
+        public bool IsLeftPressed { get; private set; }
         public bool IsJumpPressed { get; set; }
         public bool IsRangedAttackPressed { get; set; }
 

@@ -1,4 +1,5 @@
 using System;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
@@ -52,11 +53,6 @@ namespace Source.PlayerLogic
         }
 
         private void Refresh() => currentSound = null;
-
-        private void StopSound()
-        {
-            manager.Stop(currentSound);
-        }
     }
 
 }

@@ -1,13 +1,11 @@
 using System;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
     public class Jump : MonoBehaviour, IJump, ITossable
     {
-        // [Header("PlayerScript")] [SerializeField]
-        // private Player player;
-        
         [SerializeField] private float jumpForce = 10f;
         [SerializeField] private int maxJumpCount = 3;
         

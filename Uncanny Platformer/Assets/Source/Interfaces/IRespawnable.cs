@@ -1,6 +1,8 @@
 using System;
+using Source.PlayerLogic;
+using Source.Traps;
 
-namespace Source.PlayerLogic
+namespace Source.Interfaces
 {
     public interface IRespawnable
     {

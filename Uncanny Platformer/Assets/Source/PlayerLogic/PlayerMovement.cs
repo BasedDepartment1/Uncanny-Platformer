@@ -1,14 +1,11 @@
 using System;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic
 {
     public class PlayerMovement : MonoBehaviour, IMovement
     {
-        // [Header("PlayerScript")] [SerializeField]
-        // private Player player;
-
-        [Header("Movement characteristics")]
         [SerializeField] private float maxSpeed = 10f;
 
         private bool isOrientationRight = true;
@@ -48,7 +45,8 @@ namespace Source.PlayerLogic
 
         private void MoveToDirection(Directions direction)
         {
-            Player.Body.velocity = GetPlayerVelocity((int)direction, maxSpeed, Player.Body.velocity);
+            Player.Body.velocity = new Vector2((int)direction * maxSpeed,
+                Player.Body.velocity.y);
         
             if ((int)direction > 0 && !isOrientationRight
                 || (int)direction < 0 && isOrientationRight)
@@ -57,12 +55,6 @@ namespace Source.PlayerLogic
             }
         }
 
-        public Vector2 GetPlayerVelocity(int direction, float maxSpeed, Vector2 velocity)
-        {
-            return new Vector2(direction * maxSpeed,
-                velocity.y);
-        } 
-        
         private void Flip()
         {
             var transform1 = transform;

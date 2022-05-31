@@ -1,11 +1,9 @@
 using System;
-using Source.PlayerLogic;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.EnemyLogic
 {
-    // TODO refactor this piece of shit code
-    
     public class EnemyPatrol : MonoBehaviour, IMovement
     {
         [Header("Patrol Objects")] 

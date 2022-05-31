@@ -1,6 +1,6 @@
 using System;
 
-namespace Source.PlayerLogic
+namespace Source.Interfaces
 {
     public interface IJump
     {

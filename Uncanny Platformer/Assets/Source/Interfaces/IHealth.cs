@@ -1,6 +1,6 @@
 using System;
 
-namespace Source
+namespace Source.Interfaces
 {
     public interface IHealth
     {

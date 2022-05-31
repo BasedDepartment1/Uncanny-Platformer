@@ -1,3 +1,4 @@
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.PlayerLogic

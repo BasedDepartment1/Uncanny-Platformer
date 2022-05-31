@@ -1,27 +1,26 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Timers;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TimedButton : MonoBehaviour
+namespace Source.UI
 {
-    // Start is called before the first frame update
-    private float currentTime;
-    [SerializeField] public Button button;
-    public void Start()
+    public class TimedButton : MonoBehaviour
     {
-        currentTime = 0;
-        button.interactable = false;
-    }
-
-    void Update()
-    {
-        currentTime += Time.deltaTime;
-        if (currentTime >= 15)
+        private float currentTime;
+        [SerializeField] public Button button;
+    
+        public void Start()
         {
-            button.interactable = true;
+            currentTime = 0;
+            button.interactable = false;
+        }
+
+        void Update()
+        {
+            currentTime += Time.deltaTime;
+            if (currentTime >= 15)
+            {
+                button.interactable = true;
+            }
         }
     }
 }

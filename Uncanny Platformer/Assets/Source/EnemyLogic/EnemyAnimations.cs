@@ -12,8 +12,6 @@ namespace Source.EnemyLogic
 
     public class EnemyAnimations : MonoBehaviour
     {
-        // [SerializeField] private Enemy enemy;
-        
         private bool isHurting;
         private string currentState;
         private Animator animator;

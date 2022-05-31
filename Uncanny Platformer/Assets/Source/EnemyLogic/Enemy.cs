@@ -1,4 +1,4 @@
-using Source.PlayerLogic;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source.EnemyLogic

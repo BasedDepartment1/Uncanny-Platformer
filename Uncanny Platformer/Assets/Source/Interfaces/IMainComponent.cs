@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Source
+namespace Source.Interfaces
 {
     public interface IMainComponent
     {

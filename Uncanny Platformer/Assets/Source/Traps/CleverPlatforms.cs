@@ -6,6 +6,7 @@ namespace Source.Traps
     {
         private PlatformEffector2D effector;
         private float waitTime;
+        
         private void Start()
         {
             effector = GetComponent<PlatformEffector2D>();

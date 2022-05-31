@@ -1,6 +1,6 @@
 using System;
 using System.Collections;
-using Source.PlayerLogic;
+using Source.Interfaces;
 using UnityEngine;
 
 namespace Source

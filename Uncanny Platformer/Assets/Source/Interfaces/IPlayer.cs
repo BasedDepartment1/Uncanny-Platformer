@@ -1,4 +1,6 @@
-namespace Source.PlayerLogic
+using Source.PlayerLogic;
+
+namespace Source.Interfaces
 {
     public interface IPlayer : IMainComponent
     {

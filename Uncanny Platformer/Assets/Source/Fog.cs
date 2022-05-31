@@ -1,9 +1,7 @@
-using System;
 using UnityEngine;
 
 namespace Source
 {
-
     public class Fog : MonoBehaviour
     {
         [SerializeField] private int width;
@@ -51,7 +49,8 @@ namespace Source
             var yCoord = (float) y / height * scale + offsetY;
 
             var colorCode = perlinNoiseGenerator.Noise(xCoord, yCoord);
-            return new Color(colorCode + colorOffset, colorCode + colorOffset, colorCode + colorOffset, colorCode*0.25f);
+            return new Color(colorCode + colorOffset, colorCode + colorOffset, 
+                colorCode + colorOffset, colorCode * 0.25f);
         }
     }
 }

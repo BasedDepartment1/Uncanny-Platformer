@@ -1,4 +1,6 @@
 using System;
+using Source.Interfaces;
+using Source.Traps;
 using UnityEngine;
 
 namespace Source.PlayerLogic
