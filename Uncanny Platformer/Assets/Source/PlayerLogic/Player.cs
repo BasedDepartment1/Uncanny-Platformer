@@ -40,7 +40,7 @@ namespace Source.PlayerLogic
         private void Awake()
         {
             SetUpComponents();
-            Health.Death += () => SetActive(false);
+            Health.Death += OnDeath;
             Respawn.Respawn += () => SetActive(true);
         }
 
@@ -60,6 +60,12 @@ namespace Source.PlayerLogic
         {
             Controls.Switch(mode);
             Movement.Switch(mode);
+        }
+
+        private void OnDeath()
+        {
+            transform.SetParent(null);
+            SetActive(false);
         }
     }
 }

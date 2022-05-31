@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5789200093759024975}
   - component: {fileID: 5789200093759024960}
   - component: {fileID: 1518750911181478944}
-  - component: {fileID: 3577951827066795359}
+  - component: {fileID: 4737430642937936028}
   m_Layer: 0
   m_Name: PF Village Props - Crate Small
   m_TagString: Untagged
@@ -110,24 +110,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0375786, y: 1.0346227}
   m_EdgeRadius: 0
---- !u!50 &3577951827066795359
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &4737430642937936028
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5789200093759024974}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 20
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d48e861491d64952b69ee015e2339d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

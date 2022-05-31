@@ -13,6 +13,8 @@ namespace Source.Traps
     
         private void Update()
         {
+            if (!enabled) return;
+            
             if (Vector2.Distance(transform.position,
                 CurrentTarget.position) < 0.1f)
             {

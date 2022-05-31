@@ -9,6 +9,8 @@ TagManager:
   - Trap
   - Knife
   - Platform
+  - Zone1
+  - Zone2
   layers:
   - Default
   - TransparentFX

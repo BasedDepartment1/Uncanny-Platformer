@@ -54,6 +54,7 @@ namespace Source.UI
         public void StartLevelAgain()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Resume();
         }
     }
 }

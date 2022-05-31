@@ -9,9 +9,15 @@ namespace Source.PlayerLogic
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Player") 
-                || other.CompareTag("Platform")
-                || other.CompareTag("Trap")
+            // if (other.CompareTag("Player") 
+            //     || other.CompareTag("Platform")
+            //     || other.CompareTag("Trap")
+            //     || other.GetComponent<Collider2D>().enabled == false)
+            // {
+            //     return;
+            // }
+            if (!other.CompareTag("Enemy")
+                && !other.CompareTag("Ground")
                 || other.GetComponent<Collider2D>().enabled == false)
             {
                 return;

@@ -36,9 +36,9 @@ namespace Source
 
         public void Kill()
         {
-            for (var i = 0; i < 10; i++)
+            for (var i = 0; i < 100; i++)
             {
-                ReduceHealthPoints(startingHealth / 10);
+                ReduceHealthPoints(startingHealth / 100);
             }
         }
 
