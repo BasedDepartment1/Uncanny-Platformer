@@ -13,6 +13,7 @@ namespace Source
 
             if (colliderGameObject.CompareTag("Player"))
             {
+                Cursor.visible = true;
                 LoadScene();
             }
         }
