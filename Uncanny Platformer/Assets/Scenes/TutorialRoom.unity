@@ -27489,8 +27489,8 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: fe0b1f9aeb45b41b089175aeeabd5d95, type: 3}
     volume: 0.4
     volumeVariance: 0
-    pitch: 1
-    pitchVariance: 0
+    pitch: 0.5
+    pitchVariance: 0.3
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
@@ -27504,8 +27504,8 @@ MonoBehaviour:
     mixerGroup: {fileID: 0}
     source: {fileID: 0}
   - name: PlayerHurt
-    clip: {fileID: 8300000, guid: f073d502ee60842cfb25a0eb29b162bc, type: 3}
-    volume: 0.4
+    clip: {fileID: 8300000, guid: 5a5c221af96e0470e94c3232fd268bea, type: 3}
+    volume: 0.3
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0
