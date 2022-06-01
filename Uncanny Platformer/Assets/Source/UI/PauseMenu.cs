@@ -5,6 +5,7 @@ namespace Source.UI
 {
     public class PauseMenu : MonoBehaviour
     {
+        [SerializeField] private GameObject panel;
         [SerializeField] private Canvas hpCanvas;
         private static bool isPaused = false;
         public GameObject pauseMenuUI;
@@ -15,7 +16,16 @@ namespace Source.UI
             
             if (isPaused)
             {
-                Resume();
+                if (panel.activeInHierarchy)
+                {
+                    panel.SetActive(false);
+                    pauseMenuUI.SetActive(true);
+                    Time.timeScale = 0f;
+                }
+                else
+                {
+                    Resume();
+                }
             }
             else
             {
@@ -30,6 +40,7 @@ namespace Source.UI
             pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             isPaused = true;
+            Cursor.visible = true;
         }
 
         public void Resume()
@@ -38,6 +49,7 @@ namespace Source.UI
             pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             isPaused = false;
+            Cursor.visible = false;
         }
 
         public void LoadMenu()

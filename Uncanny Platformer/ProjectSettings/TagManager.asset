@@ -11,6 +11,7 @@ TagManager:
   - Platform
   - Zone1
   - Zone2
+  - BG
   layers:
   - Default
   - TransparentFX

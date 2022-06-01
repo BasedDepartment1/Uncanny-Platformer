@@ -16047,6 +16047,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12db2f24ed6d40e58f3cba2a7e220c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 1201710083}
   hpCanvas: {fileID: 581960864}
   pauseMenuUI: {fileID: 335264887}
 --- !u!114 &204669384
@@ -22906,8 +22907,8 @@ RectTransform:
   m_Father: {fileID: 121472031}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29242,7 +29243,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29301,7 +29302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1201710084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29417,7 +29418,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PlayerJump
     clip: {fileID: 8300000, guid: 7e9ee6dc04a5d40d1a5dfc4beb9865e7, type: 3}
-    volume: 0.4
+    volume: 0.3
     volumeVariance: 0
     pitch: 1
     pitchVariance: 0

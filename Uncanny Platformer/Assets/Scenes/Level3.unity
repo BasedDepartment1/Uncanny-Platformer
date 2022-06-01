@@ -92751,7 +92751,7 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 7a80f3d6d522b433c9589ea1e2681414, type: 3}
-    volume: 0.15
+    volume: 0.1
     volumeVariance: 0
     pitch: 0.95
     pitchVariance: 0
@@ -94937,6 +94937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12db2f24ed6d40e58f3cba2a7e220c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 0}
   hpCanvas: {fileID: 1753502102}
   pauseMenuUI: {fileID: 205098204}
 --- !u!114 &633306866
@@ -103595,6 +103596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12db2f24ed6d40e58f3cba2a7e220c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panel: {fileID: 33071748}
   hpCanvas: {fileID: 1753502102}
   pauseMenuUI: {fileID: 660050831}
 --- !u!114 &1868571510

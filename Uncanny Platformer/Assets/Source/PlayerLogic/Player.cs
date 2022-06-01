@@ -39,6 +39,7 @@ namespace Source.PlayerLogic
 
         private void Awake()
         {
+            Cursor.visible = false;
             SetUpComponents();
             Health.Death += OnDeath;
             Respawn.Respawn += () => SetActive(true);
