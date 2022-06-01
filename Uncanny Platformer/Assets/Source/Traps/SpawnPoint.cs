@@ -20,6 +20,7 @@ namespace Source.Traps
 
         public void Switch(bool mode)
         {
+            Start();
             isActive = mode;
             animator.Play(mode 
                 ? SpawnAnimations.Active.ToString() 
