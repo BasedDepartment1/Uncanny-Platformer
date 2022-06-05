@@ -28,7 +28,7 @@ namespace Source
             var relativeX = fx - floorX;
             var relativeY = fy - floorY;
             
-            var gradientVectors = GetSquareBounds(new[] {0, 1}, floorX, floorY)
+            var gradientVectors = GetSquareBounds(new[] {0, 1}, relativeX, relativeY)
                 .Select(GetGradient);
             var vertexVectors = GetSquareBounds(new[] {0, -1}, relativeX, relativeY);
 
