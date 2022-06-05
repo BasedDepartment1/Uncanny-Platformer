@@ -15,7 +15,7 @@ namespace Source.PlayerLogic
         public const string Hurt = "Hurt";
     }
     
-    public class AnimationController : MonoBehaviour
+    public class PlayerAnimations : MonoBehaviour
     {
         [SerializeField] private float rangedAttackDelay = 0.7f;
 

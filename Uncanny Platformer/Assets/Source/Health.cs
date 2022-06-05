@@ -16,9 +16,6 @@ namespace Source
         [SerializeField] private float invisibilityDuration;
         [SerializeField] private int blinkCount;
 
-        [SerializeField] private int entityLayerIndex;
-        [SerializeField] private int[] damagingLayerIndices;
-
         private SpriteRenderer sprite;
         private bool isDead;
 
@@ -68,7 +65,7 @@ namespace Source
             
             if (CurrentHealth > 1e-6)
             {
-                StartCoroutine(ActivateInvisibility());
+                StartCoroutine(Blink());
             }
             else
             {
@@ -82,9 +79,8 @@ namespace Source
             isDead = false;
         }
 
-        private IEnumerator ActivateInvisibility()
+        private IEnumerator Blink()
         {
-            SetIgnoreCollisions(true);
             var blinkTime = invisibilityDuration / (blinkCount * 2);
             for (var i = 0; i < blinkCount; i++)
             {
@@ -92,15 +88,6 @@ namespace Source
                 yield return new WaitForSeconds(blinkTime);
                 sprite.color = Color.white;
                 yield return new WaitForSeconds(blinkTime);
-            }
-            SetIgnoreCollisions(false);
-        }
-
-        private void SetIgnoreCollisions(bool mode)
-        {
-            foreach (var layerIndex in damagingLayerIndices)
-            {
-                Physics2D.IgnoreLayerCollision(entityLayerIndex, layerIndex, mode);
             }
         }
     }

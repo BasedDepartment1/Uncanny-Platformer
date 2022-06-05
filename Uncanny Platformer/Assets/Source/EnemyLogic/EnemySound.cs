@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Source.EnemyLogic
 {
-    public class EnemySoundManager : MonoBehaviour
+    public class EnemySound : MonoBehaviour
     {
         private IEnemy Enemy { get; set; }
 
