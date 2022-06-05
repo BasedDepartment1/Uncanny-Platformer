@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Source.PlayerLogic
 {
-    public class PlayerSoundManager : MonoBehaviour
+    public class PlayerSound : MonoBehaviour
     {
         private string currentSound;
         private AudioManager manager;
