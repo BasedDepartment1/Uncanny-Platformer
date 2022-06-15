@@ -6,6 +6,8 @@ namespace Source.Interfaces
 {
     public interface IRespawnable
     {
+        float DeathTime { get; }
+        
         event Action Respawn;
 
         void SetSpawn(SpawnPoint spawnPoint);
