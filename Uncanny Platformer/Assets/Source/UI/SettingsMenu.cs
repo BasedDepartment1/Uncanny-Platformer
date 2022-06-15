@@ -35,7 +35,7 @@ namespace Source.UI
 
         public void SetVolume(float volume)
         {
-            var value = Mathf.Pow(volume, 0.25f) * 100 - 80;
+            var value = Mathf.Pow(volume, 0.3f) * 100 - 80;
             audioMixer.SetFloat("volume", value);
         }
         
