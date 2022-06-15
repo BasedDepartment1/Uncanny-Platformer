@@ -11,6 +11,8 @@ namespace Source.PlayerLogic
         
         [SerializeField] private float deathTime = 2;
         [SerializeField] private SpawnPoint currentSpawnPoint;
+        
+        public float DeathTime => deathTime;
 
         private IPlayer Player { get; set; }
 
