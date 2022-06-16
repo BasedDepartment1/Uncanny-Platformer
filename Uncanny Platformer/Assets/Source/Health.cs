@@ -7,18 +7,21 @@ namespace Source
 {
     public class Health : MonoBehaviour, IHealth, IDamageable
     {
-        public float CurrentHealth { get; private set; }
-    
         [Header("Health")]
         [SerializeField] private float startingHealth = 100f;
-    
+
         [Header("Invisibility")]
         [SerializeField] private float invisibilityDuration;
+
         [SerializeField] private int blinkCount;
 
         private SpriteRenderer sprite;
         private bool isDead;
+        
+        public float CurrentHealth { get; private set; }
 
+        public bool IsDead => isDead;
+        
         public event Action HpChanged;
 
         public event Action Death;

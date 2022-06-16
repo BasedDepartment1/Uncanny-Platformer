@@ -46,6 +46,7 @@ namespace Source.PlayerLogic
 
         private void ActivateRespawn()
         {
+            transform.SetParent(null);
             Respawn?.Invoke();
         }
     }

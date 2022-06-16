@@ -22,12 +22,6 @@ namespace Source.Traps
             newPlatform.transform.position = (Vector2) respawnPoint.position;
             oldPlatform = platform;
             platform = newPlatform;
-            Invoke(nameof(RemoveOldPlatform), player.Respawn.DeathTime);
-            
-        }
-
-        private void RemoveOldPlatform()
-        {
             Destroy(oldPlatform);
         }
     }
