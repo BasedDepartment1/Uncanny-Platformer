@@ -15,15 +15,32 @@ namespace Source.Traps
         {
             if (!enabled) return;
             
-            if (Vector2.Distance(transform.position,
-                CurrentTarget.position) < 0.1f)
+            if (HasReachedCurrentPoint())
             {
-                currentTargetIndex = (currentTargetIndex + 1) % waypoints.Length;
+                PickNextPoint();
             }
 
+            MoveToNextPoint();
+        }
+
+        private bool HasReachedCurrentPoint()
+        {
+            return Vector2.Distance(
+                transform.position,
+                CurrentTarget.position) 
+                   < 0.1f;
+        }
+
+        private void MoveToNextPoint(float speedModifier = 1f)
+        {
             transform.position = Vector2.MoveTowards(transform.position,
-                CurrentTarget.position,
-                Time.deltaTime * speed);
+                            CurrentTarget.position,
+                            Time.deltaTime * speed * speedModifier);
+        }
+
+        private void PickNextPoint()
+        {
+            currentTargetIndex = (currentTargetIndex + 1) % waypoints.Length;
         }
     }
 }
