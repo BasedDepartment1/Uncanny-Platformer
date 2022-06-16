@@ -15,7 +15,7 @@ namespace Source
 			Play("Theme", out _);
 		}
 
-		void Awake()
+		private void Awake()
 		{
 
 			foreach (Sound s in sounds)
@@ -31,10 +31,10 @@ namespace Source
 		public void Play(string sound, out float length)
 		{
 			length = 0;
-			Sound s = Array.Find(sounds, item => item.name == sound);
+			var s = Array.Find(sounds, item => item.name == sound);
 			if (s == null)
 			{
-				Debug.LogWarning("Sound: " + name + " not found!");
+				LogSoundNotFound(sound);
 				return;
 			}
 
@@ -48,13 +48,18 @@ namespace Source
 
 		public void Stop(string sound)
 		{
-			Sound s = Array.Find(sounds, item => item.name == sound);
+			var s = Array.Find(sounds, item => item.name == sound);
 			if (s == null)
 			{
-				Debug.LogWarning("Sound: " + name + " not found!");
+				LogSoundNotFound(sound);
 				return;
 			}
 			s.source.Stop();
+		}
+
+		private void LogSoundNotFound(string sound)
+		{
+			Debug.LogWarning("Sound: " + sound + " not found!");
 		}
 
 	}
