@@ -2757,7 +2757,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -4792,6 +4792,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioMixer: {fileID: 24100000, guid: 484714da7fd154e5a9ce1112d3f67468, type: 2}
   resolutionDropdown: {fileID: 99384845}
+  startVolume: 0.5
 --- !u!1 &1523896949
 GameObject:
   m_ObjectHideFlags: 0
