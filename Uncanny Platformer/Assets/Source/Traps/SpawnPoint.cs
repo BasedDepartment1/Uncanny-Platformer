@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using Source.Interfaces;
 using UnityEngine;
 
@@ -12,6 +13,9 @@ namespace Source.Traps
     public class SpawnPoint : MonoBehaviour, ISwitchable
     { 
         [SerializeField] private Transform point;
+
+        [Header("Light")] [SerializeField] [CanBeNull] 
+        private GameObject lightSource = null;
         
         public Vector2 Position => point.transform.position;
 
@@ -25,6 +29,8 @@ namespace Source.Traps
             animator.Play(mode 
                 ? SpawnAnimations.Active.ToString() 
                 : SpawnAnimations.Inactive.ToString());
+            
+            lightSource?.SetActive(mode);
 
             if (mode)
             {
