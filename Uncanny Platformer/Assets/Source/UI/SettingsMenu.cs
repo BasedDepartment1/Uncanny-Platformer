@@ -10,11 +10,9 @@ namespace Source.UI
         public AudioMixer audioMixer;
         Resolution[] resolutions;
         public Dropdown resolutionDropdown;
-        public float startVolume = 0.5f;
-        
+
         private void Start()
         {
-            audioMixer.SetFloat("volume", startVolume);
             resolutions = Screen.resolutions;
             resolutionDropdown.ClearOptions();
             var options = new List<string>();
